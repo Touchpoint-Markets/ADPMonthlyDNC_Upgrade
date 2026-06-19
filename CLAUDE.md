@@ -19,7 +19,7 @@ To deploy: use the SSIS Deployment Wizard (`dtutil` or SSISDB Catalog) with the 
 
 ## Package Control Flow
 
-`Package.dtsx` is the only package in the project. The execution order (defined via `DTS:PrecedenceConstraints`) is:
+`ADPMonthlyDNC_Upgrade.dtsx` is the only package in the project. The execution order (defined via `DTS:PrecedenceConstraints`) is:
 
 ```
 Execute Process Task (WinSCP download)
