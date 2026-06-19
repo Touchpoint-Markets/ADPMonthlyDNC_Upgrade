@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ADPMonthlyDNC_Upgrade"
   DTS:PackageType="5"
-  DTS:VersionBuild="176"
-  DTS:VersionGUID="{484284B6-EC06-4CB3-9AAE-0F2AE79E246E}">
+  DTS:VersionBuild="177"
+  DTS:VersionGUID="{8ADE7390-E489-4297-A323-DDBC39D2D92A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.9.60.43\PROCESSING;User ID=jdauser;Initial Catalog=Diamond360;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{9F189264-6630-4C8B-AEB2-CBB24468EB18}DBConnection;">
+          DTS:ConnectionString="Data Source=10.9.57.8;User ID=jdauser;Initial Catalog=Diamond360;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{9F189264-6630-4C8B-AEB2-CBB24468EB18}DBConnection;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAg891u4hqXkyEyRvKd79XqgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB6fGXgTfA3oeNMVsh2MRJk11RFxOO6s8sO5Bu5qWt+xgAAAAAOgAAAAAIAACAAAABWX9VzrynPaRp6XY4jfPfKfFO+LzhQDIP/+C0bTgfviyAAAACQW7sDvhv/0da1o73wFEcGg4gchi7hVrJh3zN+hMey1EAAAABVif2kjGPQfqBhselPuYvKD4+j19DJ1C81L+i97LAtz/Jt4cMQ/YkZxJ1giPezu1A32ndNDFKNDscdXeV9dim6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAg891u4hqXkyEyRvKd79XqgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjbFqi7lTV+cm0NA9SLQpS3a0KL16mN8GDd4K8K6HGbAAAAAAOgAAAAAIAACAAAAAOnG1LuecFlrvD/W6XblFv+1AWc5ILtIvQzUBg3FAF/CAAAABrd1fqI/B81LD+bMn0voy199VQykZOHLSfqXqjqrKoIkAAAABQcpclS7cMvh0dOAc5uX3bP446cBB9XDze3qRJpvHtGJ0ZWlPfKYcGeVihLyZJDaNXXy4bGt3YhsVtzdXu5pNl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -44,7 +44,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAg891u4hqXkyEyRvKd79XqgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLUORVFgb3VNPzaEE5DznVpA5UGbPHv6UlzGdvXipplQAAAAAOgAAAAAIAACAAAAARA6bKjH/vk4sXfK+aCPNdTQjNpU0vqIYiLrL9ojG4siAAAAB7LeToa4p3OxiKzt278m5tkc09+nRP5kIrksQePDEcBEAAAABkoINrzuUplIXuW6aALx8HidYcgI/UWh/J+d9ixD+2VVh/GPPJTrzVOf7E2RHvKao6PYdI28tSKccaZq+M4bwt</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAg891u4hqXkyEyRvKd79XqgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABqX5z+0nnfmizIPNQF7ZMq80U4vf3foV1ihe7xXYnsowAAAAAOgAAAAAIAACAAAACQrgHa5TPvVrUSs5ucJvk+ZQCxrIMaTCblau2x0V6S3yAAAABAI/KMVc2ROyciHD9a08QS2msbPyoTP/356rNNMZu910AAAAAf+VEh/C/VzKoyMm5aDbLANMTi+JQzt7SYUSo9DMSYWcUgNuUgv3AcuOe93bbSp5V5O0BPM3qiTWG/G8oIjr50</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
