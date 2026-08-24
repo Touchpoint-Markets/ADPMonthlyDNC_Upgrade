@@ -40,16 +40,16 @@ Execute Process Task (WinSCP download)
 |------|------|---------|
 | Execute Process Task | Execute Process | Runs `WinSCP.exe`; executable and arguments driven by `User::WinSCPExecutablePath`, `User::WinSCPScriptPath`, `User::WinSCPLogPath` via property expressions |
 | Check Files Downloaded or Not | C# Script Task | Fails if fewer than 2 `.csv` files exist in `SourceFolder` |
-| File not found Email | C# Script Task | Sends SMTP notification email on file-not-found failure |
+| File not found Email | C# Script Task | Sends SMTP notification email on file-not-found failure; skipped when `$Project::EnableEmail` = 0 |
 | Foreach Loop Container | Foreach File Enumerator | Iterates `*.csv` in `User::SourceFolder`; maps each path to `User::CurrentFile` |
 | Get Path of Files | C# Script Task | Sets `User::EmailsFilePath` or `User::PhonesFilePath` based on filename containing "emails" or "phones" |
 | Truncate DNC Tables | Execute SQL | `TRUNCATE TABLE JDContactsDNC; TRUNCATE TABLE JDContactsPhoneDNC;` |
 | Populating DNC Tables | Data Flow Task | Loads EmailsCSV → `JDContactsDNC`; PhoneCSV → `JDContactsPhoneDNC` |
 | Export Process | Execute SQL | `EXEC Diamond360.dbo.MonthlyJDAUpdateDNCTables` |
 | Move Files to Archive | C# Script Task | Moves all files from `SourceFolder` to `ArchiveFolder`; skips if already exists |
-| Final Confirmation Email | Script Task | Queries DB via `EmailConnection` for sample records, sends success email |
+| Final Confirmation Email | Script Task | Queries DB via `EmailConnection` for sample records, sends success email; skipped when `$Project::EnableEmail` = 0 |
 
-Package-level `OnError` event handler fires `Send Mail on Error` on any task failure.
+Package-level `OnError` event handler fires `Send Mail on Error` on any task failure; it too is skipped when `$Project::EnableEmail` = 0.
 
 ## Connection Managers
 
@@ -74,13 +74,25 @@ Package-level `OnError` event handler fires `Send Mail on Error` on any task fai
 | `User::WinSCPLogPath` | `\\CINPSQL20\ADP Auto Process Dont change folder data\winscp_log.txt` |
 | `User::SMTPServer` | `email-smtp.us-east-1.amazonaws.com` |
 | `User::SMTPPort` | `587` (Int32) |
-| `User::SMTPUsername` | AWS SES access key |
-| `User::SMTPPassword` | AWS SES secret key |
+| `User::SMTPUsername` | Evaluated from expression `@[$Project::AWSAccessKey]` (no hardcoded value) |
+| `User::SMTPPassword` | Evaluated from expression `@[$Project::AWSSecretKey]` (no hardcoded value) |
 | `User::EmailFrom` | `ADPAutoProcess@judydiamond.com` |
 | `User::EmailTo` | `eric.ryles@arc-network.com` |
 | `User::EmailCC` | Synoptek + arc-network recipients |
 | `User::ErrorEmailFrom` | `ErrorOnADPAutoProcess@judydiamond.com` |
 | `User::ErrorEmailTo` | `hvaghasiya@synoptek.com` |
+
+## Project Parameters
+
+Defined in `Project.params`, scoped to the whole project (referenced in expressions as `$Project::<Name>`):
+
+| Parameter | Sensitive | Default | Purpose |
+|-----------|-----------|---------|---------|
+| `AWSAccessKey` | No | *(blank — set at deploy time)* | AWS SES SMTP access key. Feeds `User::SMTPUsername` via a variable expression. |
+| `AWSSecretKey` | **Yes** | *(blank — set at deploy time)* | AWS SES SMTP secret key. Feeds `User::SMTPPassword` via a variable expression. Value is never stored in source control; set it in the SSIS Catalog (project parameter value / environment binding) after deployment. |
+| `EnableEmail` | No | `0` | Controls whether email notifications are sent. 0 = email disabled; 1 = email enabled. Checked at the top of every email-sending Script Task (`File not found Email`, `Final Confirmation Email`, `Send Mail on Error`); when 0, the task skips sending and still reports success. |
+
+No AWS credentials are hardcoded anywhere in the package — `User::SMTPUsername` and `User::SMTPPassword` are `EvaluateAsExpression` variables that pull their values from `$Project::AWSAccessKey` / `$Project::AWSSecretKey` at runtime.
 
 ## Protection Level
 
@@ -100,4 +112,4 @@ Both CSV files must be present (≥2 files total in `SourceFolder`) for processi
 - WinSCP command script path configured in `User::WinSCPScriptPath`
 - SQL Server `10.9.57.8` with `Diamond360` database and stored procedure `dbo.MonthlyJDAUpdateDNCTables`
 - Network share `I:\` mapped on the SSIS host (points to `\\CINPSQL20\ADP Auto Process Dont change folder data\`)
-- AWS SES SMTP endpoint configured in `User::SMTPServer` / `User::SMTPPort` / `User::SMTPUsername` / `User::SMTPPassword`
+- AWS SES SMTP endpoint configured in `User::SMTPServer` / `User::SMTPPort`, with credentials supplied via project parameters `$Project::AWSAccessKey` / `$Project::AWSSecretKey` (see [Project Parameters](#project-parameters))
