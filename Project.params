@@ -35,10 +35,9 @@
       <SSIS:Property
         SSIS:Name="Required">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Sensitive">1</SSIS:Property>
+        SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAACzvGHdZsFk7lRScs09y4zwj3OmGjt/lykL6igtTNCO8AAAAAAOgAAAAAIAACAAAAALqinq+6WmMrhokBlOFlF96sSzQukmf/O8QAD5XzwP4qAAAAC+PA6QIc4970b8ybz4PzVGpql1UhSuoHauLcE7oMImxllj3S5YCrNVx1jk90FG5/WIohZWxP8MiBqJ3Jc84d1zp4/aZ6D9kYGhoECxlw21SRL8RXxBQulwa42EbqS05Vo/SwbRf6cs2LIUpTrHTXc/r4jIK4+jTFpX+nZsniUTCQVYSOHzBopW+WF9Xzdmo11RWMJXVG7XbFBEvhy2wWJuQAAAAIBhMP2NuwR1zU7UJ0mQxvva5PVrjqwwOTUf5XGFvDkQICAwHiep8cvd/mIFragDUXrTYElERNLP5nsGYV0/puw=</SSIS:Property>
+        SSIS:Name="Value">BMVm2kBbT6kA0MZrYpg07Oa6pwL/b5RcW8IMEUVk2f7t</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
