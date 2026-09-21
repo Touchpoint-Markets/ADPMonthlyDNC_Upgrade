@@ -72,10 +72,7 @@ Package-level `OnError` event handler fires `Send Mail on Error` on any task fai
 | `User::WinSCPExecutablePath` | `C:\Program Files (x86)\WinSCP\WinSCP.exe` |
 | `User::WinSCPScriptPath` | `\\CINPSQL20\ADP Auto Process Dont change folder data\Command.txt` |
 | `User::WinSCPLogPath` | `\\CINPSQL20\ADP Auto Process Dont change folder data\winscp_log.txt` |
-| `User::SMTPServer` | `email-smtp.us-east-1.amazonaws.com` |
-| `User::SMTPPort` | `587` (Int32) |
-| `User::SMTPUsername` | Evaluated from expression `@[$Project::AWSAccessKey]` (no hardcoded value) |
-| `User::SMTPPassword` | Evaluated from expression `@[$Project::AWSSecretKey]` (no hardcoded value) |
+| `User::ImportsPath` | `I:\Git Solutions\ADPMonthlyDNC_Upgrade\Imports\` — directory the AWSSDK assembly-resolve helper probes for `AWSSDK.Core.dll` / `AWSSDK.SecretsManager.dll` at runtime |
 | `User::EmailFrom` | `ADPAutoProcess@judydiamond.com` |
 | `User::EmailTo` | `eric.ryles@arc-network.com` |
 | `User::EmailCC` | Synoptek + arc-network recipients |
@@ -88,11 +85,19 @@ Defined in `Project.params`, scoped to the whole project (referenced in expressi
 
 | Parameter | Sensitive | Default | Purpose |
 |-----------|-----------|---------|---------|
-| `AWSAccessKey` | No | *(blank — set at deploy time)* | AWS SES SMTP access key. Feeds `User::SMTPUsername` via a variable expression. |
-| `AWSSecretKey` | **Yes** | *(blank — set at deploy time)* | AWS SES SMTP secret key. Feeds `User::SMTPPassword` via a variable expression. Value is never stored in source control; set it in the SSIS Catalog (project parameter value / environment binding) after deployment. |
+| `AwsSecretName` | No | `JudyDiamond-SMTP` | Name of the AWS Secrets Manager secret holding the SMTP `UserName`/`Password` JSON, retrieved at runtime by every mail-sending Script Task. |
+| `AwsRegion` | No | `us-east-1` | AWS region of the `AwsSecretName` secret in Secrets Manager. |
 | `EnableEmail` | No | `0` | Controls whether email notifications are sent. 0 = email disabled; 1 = email enabled. Checked at the top of every email-sending Script Task (`File not found Email`, `Final Confirmation Email`, `Send Mail on Error`); when 0, the task skips sending and still reports success. |
+| `SMTPServer` | No | `email-smtp.us-east-1.amazonaws.com` | AWS SES SMTP endpoint used by every mail-sending Script Task. |
+| `SMTPPort` | No | `587` (Int32) | AWS SES SMTP port used by every mail-sending Script Task. |
 
-No AWS credentials are hardcoded anywhere in the package — `User::SMTPUsername` and `User::SMTPPassword` are `EvaluateAsExpression` variables that pull their values from `$Project::AWSAccessKey` / `$Project::AWSSecretKey` at runtime.
+No SMTP credentials are stored in the project at all — every mail-sending Script Task fetches `UserName`/`Password` from AWS Secrets Manager at runtime via two embedded helpers:
+- `GetSecretString(secretName, region)` — calls `AmazonSecretsManagerClient.GetSecretValue`
+- `ExtractJsonStringField(json, field)` — hand-rolled regex extractor (avoids a Newtonsoft.Json dependency)
+
+Each task's `static ScriptMain()` constructor wires an `AppDomain.CurrentDomain.AssemblyResolve` handler that loads `AWSSDK.Core.dll` / `AWSSDK.SecretsManager.dll` from `User::ImportsPath` (the `Imports\` folder in this project) — see [External Dependencies](#external-dependencies). `Main()` sets `_importsDir` from `User::ImportsPath` before any AWS-dependent code runs, so the resolver is registered before those types are touched.
+
+AWS access to Secrets Manager is via the SDK's default credential provider chain (IAM role on the SSIS Catalog server) — no AWS access key/secret key is stored in the project or in `Project.params`.
 
 ## Protection Level
 
@@ -112,4 +117,6 @@ Both CSV files must be present (≥2 files total in `SourceFolder`) for processi
 - WinSCP command script path configured in `User::WinSCPScriptPath`
 - SQL Server `10.9.57.8` with `Diamond360` database and stored procedure `dbo.MonthlyJDAUpdateDNCTables`
 - Network share `I:\` mapped on the SSIS host (points to `\\CINPSQL20\ADP Auto Process Dont change folder data\`)
-- AWS SES SMTP endpoint configured in `User::SMTPServer` / `User::SMTPPort`, with credentials supplied via project parameters `$Project::AWSAccessKey` / `$Project::AWSSecretKey` (see [Project Parameters](#project-parameters))
+- AWS SES SMTP endpoint configured in `$Project::SMTPServer` / `$Project::SMTPPort`, with credentials retrieved at runtime from AWS Secrets Manager (secret named by `$Project::AwsSecretName`, region `$Project::AwsRegion` — see [Project Parameters](#project-parameters))
+- AWS access to Secrets Manager via the SSIS Catalog server's IAM role (SDK default credential provider chain) — the host must have network access to the Secrets Manager endpoint in `$Project::AwsRegion` and an IAM role/policy granting `secretsmanager:GetSecretValue` on the `AwsSecretName` secret
+- `Imports\AWSSDK.Core.dll` and `Imports\AWSSDK.SecretsManager.dll` (3.7.500, net45) — referenced by the three mail-sending Script Tasks' embedded `.csproj` via `<HintPath>`, and loaded at runtime through an `AssemblyResolve` handler that probes `User::ImportsPath` first

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
   <SSIS:Parameter
-    SSIS:Name="AWSAccessKey">
+    SSIS:Name="AwsSecretName">
     <SSIS:Properties>
       <SSIS:Property
         SSIS:Name="ID">{c09b0af8-f619-414a-9593-be18aa8b54d5}</SSIS:Property>
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Description">AWS access key (AWS SES SMTP username). Set via the SSIS Catalog project parameter value / environment variable binding at deployment time — do not hardcode.</SSIS:Property>
+        SSIS:Name="Description">Name of the AWS Secrets Manager secret holding the SMTP UserName/Password JSON, retrieved at runtime by every mail-sending Script Task instead of storing credentials in project parameters.</SSIS:Property>
       <SSIS:Property
         SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
       <SSIS:Property
@@ -16,20 +16,20 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">AKIATN243CRFBRHH3H6E</SSIS:Property>
+        SSIS:Name="Value">JudyDiamond-SMTP</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
   </SSIS:Parameter>
   <SSIS:Parameter
-    SSIS:Name="AWSSecretKey">
+    SSIS:Name="AwsRegion">
     <SSIS:Properties>
       <SSIS:Property
         SSIS:Name="ID">{b89b521f-f142-4cb3-bb6f-fdacf25bcaba}</SSIS:Property>
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Description">AWS secret key (AWS SES SMTP password). Sensitive — value is never stored in source control; set via the SSIS Catalog project parameter value / environment variable binding at deployment time.</SSIS:Property>
+        SSIS:Name="Description">AWS region of the AwsSecretName secret in Secrets Manager.</SSIS:Property>
       <SSIS:Property
         SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
       <SSIS:Property
@@ -37,9 +37,51 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">BMVm2kBbT6kA0MZrYpg07Oa6pwL/b5RcW8IMEUVk2f7t</SSIS:Property>
+        SSIS:Name="Value">us-east-1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="SMTPServer">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{7e1c6f2a-9d3b-4a5e-8c7f-1a2b3c4d5e6f}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">AWS SES SMTP endpoint used by every mail-sending Script Task.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">email-smtp.us-east-1.amazonaws.com</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="SMTPPort">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{4f8a2d6c-1e9b-4c7a-9d5f-6b3e8a1c2d4f}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">AWS SES SMTP port used by every mail-sending Script Task.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">587</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">9</SSIS:Property>
     </SSIS:Properties>
   </SSIS:Parameter>
   <SSIS:Parameter
