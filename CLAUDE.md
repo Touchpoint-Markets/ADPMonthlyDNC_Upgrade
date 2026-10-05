@@ -13,7 +13,7 @@ The project is developed and built using **SQL Server Data Tools (SSDT) in Visua
 - **Open solution**: `ADPMonthlyDNC_Upgrade.slnx`
 - **Build configuration**: `Development` (the only configuration defined)
 - **Build output**: `bin\Development\ADPMonthlyDNC.ispac` — this `.ispac` file is the deployment artifact for SSIS Catalog deployment
-- **Target server version**: SQL Server 2025
+- **Target server version**: SQL Server 2019 (Script Tasks use VSTA 15 / `Microsoft.SqlServer.ManagedDTS` 15.0.0.0)
 
 To deploy: use the SSIS Deployment Wizard (`dtutil` or SSISDB Catalog) with the built `.ispac` file.
 
@@ -101,7 +101,7 @@ AWS access to Secrets Manager is via the SDK's default credential provider chain
 
 ## Protection Level
 
-The package uses `EncryptSensitiveWithUserKey`. Opening the package on a different machine or as a different Windows user will require re-entering sensitive connection credentials.
+The package uses `EncryptSensitiveWithUserKey`. Opening the package on a different machine or as a different Windows user will require re-entering sensitive connection credentials. The `DBConnection` and `EmailConnection` passwords are not currently saved in the package (dropped during the SQL Server 2019 retarget) — supply them via SSIS Catalog connection overrides or environment references at deployment.
 
 ## File Naming Convention
 
