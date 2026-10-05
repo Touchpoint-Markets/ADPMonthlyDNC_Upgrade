@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ADPMonthlyDNC_Upgrade"
   DTS:PackageType="5"
-  DTS:VersionBuild="190"
-  DTS:VersionGUID="{A05F39A5-A155-4F58-B9E5-903E3762E282}">
+  DTS:VersionBuild="191"
+  DTS:VersionGUID="{B9E80332-6F49-4B79-8100-B6A3056FA82C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.9.57.8;User ID=jdauser;Initial Catalog=Diamond360;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{9F189264-6630-4C8B-AEB2-CBB24468EB18}DBConnection;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfsaZypIihdkuLcLh5HppA0hSGYTsrXhG788yb+uPHgQAAAAAOgAAAAAIAACAAAACUey1xHwAma7ynEZjSIngdHrcgEjkweduVjoiu+pjnCyAAAADy72fRg7KN7nLWfIZYdH7vdigVZsGEBQJwDiaVLjg9n0AAAAC0pnC6hRKMv7cbqgKwi66J5ld9AsdeLyfxk2x1bb3JBWssnApriFGzQX4Hqsoy49WIWzFsB9msJ5zZO+ytC3mG</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=10.9.57.8;User ID=jdauser;Initial Catalog=Diamond360;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{9F189264-6630-4C8B-AEB2-CBB24468EB18}DBConnection;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -40,12 +35,7 @@
       DTS:ObjectName="EmailConnection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.9.57.8;User ID=jdauser;Initial Catalog=Diamond360;Persist Security Info=True;TrustServerCertificate=True;Application Name=SSIS-Package-{F091D986-20C1-4B6F-BE2A-E6A994B3F03C}10.9.57.8.Diamond360.jdauser3;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACikSDuIi4M3Cy3fE0Eyc3Ch/xfUuztMWi5DT7FLyERlQAAAAAOgAAAAAIAACAAAAAi9c+317l7FiuhreCpSs59aZ7Dm/93FtynI70AfAM2XSAAAADdaqv1Rh0nFFUheb/U2XdEz6+0H2ghvufFU1vW+VH1w0AAAAAu5mY+eIRzRhaNO7NEac76avjbg7mv0SGGNDJI4ZGIvpNELX6NsHBRo4IvLg05wh8pPydZm+X4FVjOmpq1rArA</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=10.9.57.8;User ID=jdauser;Initial Catalog=Diamond360;Persist Security Info=True;TrustServerCertificate=True;Application Name=SSIS-Package-{F091D986-20C1-4B6F-BE2A-E6A994B3F03C}10.9.57.8.Diamond360.jdauser3;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -396,7 +386,7 @@
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_1d8fb943a9e74ffc992917904cdbc7ab"
-          VSTAMajorVersion="17"
+          VSTAMajorVersion="15"
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::SourceFolder">
@@ -519,92 +509,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="ST_1d8fb943a9e74ffc992917904cdbc7ab.csproj"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{76ebabc0-0a41-4c0d-b1b5-15081960c3d5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ST_1d8fb943a9e74ffc992917904cdbc7ab</RootNamespace>
-    <AssemblyName>ST_1d8fb943a9e74ffc992917904cdbc7ab</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptMain.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
-        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
-        <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -763,65 +667,6 @@ namespace ST_1d8fb943a9e74ffc992917904cdbc7ab
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Project"
-            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_1d8fb943a9e74ffc992917904cdbc7ab</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_1d8fb943a9e74ffc992917904cdbc7ab</msb:DisplayName>
-    <msb:ProjectId>{CC86277C-D172-439E-9B93-883398B8FF8B}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_1d8fb943a9e74ffc992917904cdbc7ab.csproj" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1d8fb943a9e74ffc992917904cdbc7ab")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1d8fb943a9e74ffc992917904cdbc7ab")]
-[assembly: AssemblyCopyright("Copyright @  2026")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-          <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
 // <auto-generated>
@@ -889,10 +734,155 @@ namespace ST_1d8fb943a9e74ffc992917904cdbc7ab.Properties {
         }
     }
 }]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_1d8fb943a9e74ffc992917904cdbc7ab</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_1d8fb943a9e74ffc992917904cdbc7ab</msb:DisplayName>
+    <msb:ProjectId>{68629B7E-C8AF-4379-9585-FC8F4BFD399E}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_1d8fb943a9e74ffc992917904cdbc7ab.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1d8fb943a9e74ffc992917904cdbc7ab")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1d8fb943a9e74ffc992917904cdbc7ab")]
+[assembly: AssemblyCopyright("Copyright @  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_1d8fb943a9e74ffc992917904cdbc7ab.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76ebabc0-0a41-4c0d-b1b5-15081960c3d5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_1d8fb943a9e74ffc992917904cdbc7ab</RootNamespace>
+    <AssemblyName>ST_1d8fb943a9e74ffc992917904cdbc7ab</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
           <BinaryItem
             Name="ST_1d8fb943a9e74ffc992917904cdbc7ab.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEoXjGoAAAAAAAAAAOAAIiALATAAAA4AAAAIAAAAAAAA3i0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEmGw2oAAAAAAAAAAOAAIiALATAAAA4AAAAIAAAAAAAA3i0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIwtAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -920,8 +910,8 @@ qQAvBBUAuQAvBAYAcQApBRsAwQABBSAAyQCnAyUA0QDcAisAiQAGAy8A2QAPBTMAwQBSBQEAcQAv
 BAYAiQAvBAYA4QCTADoA4QBhBUEAkQAvBEYAsQAvBAYACAAUAF8ACAAYAGQAKQBzAMwALgALAKQA
 LgATAK0ALgAbAMwALgAjANUALgArAP4ALgAzAP4ALgA7AP4ALgBDANUALgBLAAQBLgBTAP4ALgBb
 ABsBQwBjAGQASQBzAMwAYQB7AGQAYwBrAGQAAwABAAQAAwAAAB8ElQAAAPIAmgAAAEoFnwACAAQA
-AwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAAQm5UYAAAAAAAA7AAAABAAAAAAAAAAAAAAATQBf
-AAAAAAARAAAAAAAAAAAAAABWAA8DAAAAAAQAAAAAAAAAAAAAAE0AsAMAAAAAEQAAAAAAAAAAAAAA
+AwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAC4mkHUAAAAAAAA7AAAABAAAAAAAAAAAAAAATQBf
+AAAAAAAPAAAAAAAAAAAAAABWAA8DAAAAAAQAAAAAAAAAAAAAAE0AsAMAAAAADwAAAAAAAAAAAAAA
 VgAUAAAAAAAAAAAAAQAAAIAEAAAFAAIAAAAAAAA8TW9kdWxlPgBTeXN0ZW0uSU8ATWljcm9zb2Z0
 LlNxbFNlcnZlci5NYW5hZ2VkRFRTAHZhbHVlX18AU1RfMWQ4ZmI5NDNhOWU3NGZmYzk5MjkxNzkw
 NGNkYmM3YWIAbXNjb3JsaWIAZGVmYXVsdEluc3RhbmNlAFZhcmlhYmxlAFJ1bnRpbWVUeXBlSGFu
@@ -950,7 +940,7 @@ dHMAT2JqZWN0AGdldF9EZWZhdWx0AHNldF9UYXNrUmVzdWx0AGdldF9Bc3NlbWJseQBEaXJlY3Rv
 cnkAACVVAHMAZQByADoAOgBTAG8AdQByAGMAZQBGAG8AbABkAGUAcgAACyoALgBjAHMAdgAAcVMA
 VABfADEAZAA4AGYAYgA5ADQAMwBhADkAZQA3ADQAZgBmAGMAOQA5ADIAOQAxADcAOQAwADQAYwBk
 AGIAYwA3AGEAYgAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAA
-FcFLAtOCykCD97YsLCicfAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERUQQgABJhBCAAEmUFIAES
+lC/FwvhYOEuAu+4PBeZEsAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERUQQgABJhBCAAEmUFIAES
 aRwDIAAcAyAADgYAAh0ODg4GAAEScRF1BCAAEnkGIAIBDhJ5CLd6XFYZNOCJCImEXc2AgMyRBAAA
 AAAEAQAAAAMGEkkDBhJNAwYSEAIGCAMGERQEAAASSQQAABJNBQABARJNBAAAEhADAAABBAgAEkkE
 CAASTQQIABIQCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAA
@@ -964,14 +954,14 @@ AADOLQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBt
 c2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAA
 AAAASAAAAFhAAAAaBAAAAAAAAAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYA
-TwAAAAAAvQTv/gAAAQAAAAEA5UYEJgAAAQDlRgQmPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAA
+TwAAAAAAvQTv/gAAAQAAAAEAkHUuJgAAAQCQdS4mPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAA
 AEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkA
 bwBuAAAAAAAAALAEegMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAw
 ADAAMAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAA
 YQBuAHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBu
 AAAAAABTAFQAXwAxAGQAOABmAGIAOQA0ADMAYQA5AGUANwA0AGYAZgBjADkAOQAyADkAMQA3ADkA
 MAA0AGMAZABiAGMANwBhAGIAAAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAw
-AC4AOQA3ADMAMgAuADEAOAAxADQAOQAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUA
+AC4AOQA3ADcANAAuADMAMAAwADkANgAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUA
 AABTAFQAXwAxAGQAOABmAGIAOQA0ADMAYQA5AGUANwA0AGYAZgBjADkAOQAyADkAMQA3ADkAMAA0
 AGMAZABiAGMANwBhAGIALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgA
 dAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIANgAAACoAAQABAEwAZQBnAGEAbABU
@@ -980,8 +970,8 @@ bgBhAG0AZQAAAFMAVABfADEAZAA4AGYAYgA5ADQAMwBhADkAZQA3ADQAZgBmAGMAOQA5ADIAOQAx
 ADcAOQAwADQAYwBkAGIAYwA3AGEAYgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEA
 bQBlAAAAAABTAFQAXwAxAGQAOABmAGIAOQA0ADMAYQA5AGUANwA0AGYAZgBjADkAOQAyADkAMQA3
 ADkAMAA0AGMAZABiAGMANwBhAGIAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4A
-AAAxAC4AMAAuADkANwAzADIALgAxADgAMQA0ADkAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAg
-AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADkANwAzADIALgAxADgAMQA0ADkAAAAAAAAAAAAAAAAA
+AAAxAC4AMAAuADkANwA3ADQALgAzADAAMAA5ADYAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAg
+AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADkANwA3ADQALgAzADAAMAA5ADYAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1270,7 +1260,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_296c7f60734f41b2bf509773d6ee3c07"
-          VSTAMajorVersion="17"
+          VSTAMajorVersion="15"
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="$Project::SMTPServer,$Project::SMTPPort,$Project::AwsSecretName,$Project::AwsRegion,User::ImportsPath,User::EmailFrom,User::EmailTo,User::EmailCC,$Project::EnableEmail">
@@ -1557,7 +1547,7 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
     <msb:CodeName>ST_296c7f60734f41b2bf509773d6ee3c07</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_296c7f60734f41b2bf509773d6ee3c07</msb:DisplayName>
-    <msb:ProjectId>{D40EEEC0-679A-4CB1-96F5-9462A44DA48E}</msb:ProjectId>
+    <msb:ProjectId>{00430DF8-0D5F-4CF7-B699-9B62E0DEB493}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_296c7f60734f41b2bf509773d6ee3c07.csproj" />
@@ -1643,8 +1633,8 @@ using System.Runtime.CompilerServices;
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>I:\Git Solutions\ADPMonthlyDNC_Upgrade\Imports\AWSSDK.Core.dll</HintPath>
     </Reference>
@@ -1685,7 +1675,7 @@ using System.Runtime.CompilerServices;
         <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" />
         <Host Name="ScriptTask" />
         <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -1768,196 +1758,6 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9.Properties {
         }
     }
 }]]></ProjectItem>
-          <BinaryItem
-            Name="ST_296c7f60734f41b2bf509773d6ee3c07.dll">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
-AAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAMgGAAAjfgAANAcAADgKAAAjU3RyaW5ncwAAAABs
-EQAADAUAACNVUwB4FgAAEAAAACNHVUlEAAAAiBYAAIwCAAAjQmxvYgAAAAAAAAACAAABVx2iCQkD
-AAAA+gEzABYAAAEAAABAAAAABgAAAAgAAAAQAAAACQAAAFMAAAACAAAAEQAAAAMAAAACAAAAAwAA
-AAQAAAACAAAAAQAAAAYAAAABAAAAAgAAAAAA5wUBAAAAAAAGAM0DAggGAFwEAggGABkD7wcPAHYI
-AAAGAEYDzAYGALADzAYGAJEDzAYGAEMEzAYGAO0DzAYGAAYEzAYGAF0DzAYGAHgDuQQKACEEMAUK
-AGMCMAUOAJsJiQcSAEYBzgUGANkBSgYGAGMGSgYGAOECAggGAFcJSgYGAB4KzAYGAMsISgYGAMwB
-zAYGADcA3gAGAPwC7wcGAGMHIggGACEHtwYSAMwCuAUSAC0DuAUSAH8CogYGAPYESgYGAH8GSgYG
-ALMHSgYWAMIJEwcOANoJawUOAK0CawUGAGkBSgYSAAsK8QgSAP0E8QgSAC0H8QgGAAQHSgYSAN4G
-8QgSAFsC8QgKAKYFMAUaALgI4gEaAGAB4gEGADEASgYSAJ8HagkSAAoCagkSACcJzgUSAO4GzgUG
-ABAAhwUSAJAJzgUSAFkFagkSAPAJagkGABoCSgYGAHUBSgYGALYJSgbrAEoHAAAGAAwFoAAGAEUH
-SgYGAMcHSgYGAB0A3gAGAJkBoAAAAAAAkAAAAAAAAQABAAEAAAB0BmwAOQABAAEAAAAQACkIhQhR
-AAIABwAAARAAwgiFCHkABAALAAMBAAA7CQAASQAFAA4AAyEQANoAAABRAAgADgARANYHGwARAGgG
-gwERAEsChwERADYBiwEGBskAjwFWgB8JkgFWgCsCkgE2AGgAlgFQIAAAAACRGOgHmgEBAHggAAAA
-AJEA7QQVAQEAyCAAAAAAkQAKARUBAwA4IQAAAACGAHoGBgAFAKghAAAAAIYA3gXQAAUAUyMAAAAA
-hhjiBwYABwBbIwAAAACDGOIHBgAHAGMjAAAAAJMIXweeAQcAjyMAAAAAkwgzAqMBBwCWIwAAAACT
-CD8CqAEHAJ4jAAAAAJYIdQmuAQgApSMAAAAAhhjiBwYACACtIwAAAACRGOgHmgEIALkjAAAAAJEY
-6AeaAQgAWyMAAAAAhhjiBwYACADIIwAAAACDAAEAswEIAAAAAQDBAQAAAgCbBgAAAQAOBwAAAgCn
-AQAAAQBiCQAAAgAVCgAAAQCfBAAAAQBYBwAAAgDcCAkA4gcBABEA4gcGABkA4gcKACkA4gcQADEA
-4gcQADkA4gcQAEEA4gcQAEkA4gcQAFEA4gcQAFkA4gcQAGEA4gcQAGkA4gcGAJkA4gcGAMkA4gcG
-AOkA4gcVAPkALwobAAEBiQYeAAkB4gckAAEBpQQqABEBsQE3AHkA4gc+ABkB4gcGABkB+QAQAHkA
-kARFACEB3AROACkBxAIGAPkAUAlSADEB/QRZAEEBGwlhAEkB4gcQADkBEAllAFEBQQZrAFkBegRO
-APkALgFyAHEAMwl4AGEBtAh+AGkBQQaEAHEBegSLAKEA0wROAGEBgQkBAIEBHgaeAIkAAwqlAIkA
-0wSqAIEA4gcGAJEB4gcQAIEAUQavAIEAGge2AAwABgHFAIEAmQC2AJkBBgEQAIEAXgkQAIEADwbL
-AIEAEQoQAKkB4gcQAKkB0QkBALEB4gfQAKkB4QjWAKkBMwbLAKkBKQHdAHEA4gcGAKEA4gcGAMEB
-hwHjAMEBGgrsANEA4gfxAPEA4gcGALEAngFOALkA4gcQANEBAwUOAeEBAgIVAdEBUgEbAeEBAgJS
-APkAIQEgAeEBMwcmAekB0wROAPkAUAkVAfEBlwIpARQA4gc3ARQABgFCAbkAngFOABQAhARKAfkA
-JwpTAQECSQlTAakAWgZYAQgAGAB5AQgAHAB+ASkAewDyAS4ACwDKAS4AEwDTAS4AGwDyAS4AIwD7
-AS4AKwAkAi4AMwAkAi4AOwAkAi4AQwD7AS4ASwAqAi4AUwAkAi4AWwBBAkMAYwB+AUkAewDyAWMA
-cwB+AYEAawB+AcMAawB+ATEAjwD4AAMAAQAEAAMAAABjB7sBAABTAsABAAB5CcUBAgAIAAMAAgAJ
-AAUAAQAKAAUAAgALAAcAvAAvAQSAAAABAAAAICaQLwAAAAAAAEQAAAAEAAAAAAAAAAAAAABeAdEA
-AAAAABEAAAAAAAAAAAAAAGcBEQUAAAAAAwADAAAAAAAAAAAAcAFzBwAAAAAEAAAAAAAAAAAAAABe
-AUoGAAAAAAMAAwAAAAAAAAAAAHABHwIAAAAAEQAAAAAAAAAAAAAAZwGqAAAAAAAAAAAAAQAAADMI
-AAAFAAIABgACAAAAADwuY2N0b3I+Yl9fMV8wAENvbGxlY3Rpb25gMQBJRXF1YWxpdHlDb21wYXJl
-cmAxAEludDMyAERpY3Rpb25hcnlgMgBTVF8yOTZjN2Y2MDczNGY0MWIyYmY1MDk3NzNkNmVlM2Mw
-NwA8PjkAU1RfZDFkY2M1MDQyMWNlNDZiOTlhOWRmNTg0MGViYzY5YTkAPE1vZHVsZT4AZ2V0X0ND
-AFN5c3RlbS5JTwBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVfXwBtc2Nvcmxp
-YgA8PmMAU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMAc2V0X1NlY3JldElkAEFkZABFeHRyYWN0
-SnNvblN0cmluZ0ZpZWxkAFRyaW1FbmQAU2VuZABSZXBsYWNlAGRlZmF1bHRJbnN0YW5jZQBNYWls
-TWVzc2FnZQBHZXRFbnZpcm9ubWVudFZhcmlhYmxlAElEaXNwb3NhYmxlAFJ1bnRpbWVUeXBlSGFu
-ZGxlAEdldFR5cGVGcm9tSGFuZGxlAEZpbGUAZ2V0X05hbWUAZmllbGROYW1lAEdldEJ5U3lzdGVt
-TmFtZQBzZWNyZXROYW1lAEFzc2VtYmx5TmFtZQBEYXRlVGltZQBNaWNyb3NvZnQuU3FsU2VydmVy
-LkR0cy5SdW50aW1lAENvbWJpbmUAU2VjdXJpdHlQcm90b2NvbFR5cGUAQVdTU0RLLkNvcmUARmFp
-bHVyZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQ2FwdHVyZQBWU1RB
-UlRTY3JpcHRPYmplY3RNb2RlbEJhc2UAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAZ2V0X09yZGlu
-YWxJZ25vcmVDYXNlAEdldFNlY3JldFZhbHVlUmVzcG9uc2UARGlzcG9zZQBFZGl0b3JCcm93c2Fi
-bGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0
-cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2Vt
-Ymx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3
-b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2Ny
-aXB0aW9uQXR0cmlidXRlAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQ
-cm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRUYXNr
-RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBh
-dGliaWxpdHlBdHRyaWJ1dGUAZ2V0X1ZhbHVlAFRyeUdldFZhbHVlAEdldFNlY3JldFZhbHVlAHZh
-bHVlAGFkZF9Bc3NlbWJseVJlc29sdmUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmlu
-ZwBnZXRfU2VjcmV0U3RyaW5nAEdldFNlY3JldFN0cmluZwBNYXRjaABHZXRGb2xkZXJQYXRoAE1p
-Y3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFzawBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNr
-cy5TY3JpcHRUYXNrAE5ldHdvcmtDcmVkZW50aWFsAEFtYXpvbi5TZWNyZXRzTWFuYWdlci5Nb2Rl
-bABTeXN0ZW0uQ29sbGVjdGlvbnMuT2JqZWN0TW9kZWwAU2NyaXB0T2JqZWN0TW9kZWwAU3lzdGVt
-LkNvbXBvbmVudE1vZGVsAFN5c3RlbS5OZXQuTWFpbABzZW5kTWFpbABTVF8yOTZjN2Y2MDczNGY0
-MWIyYmY1MDk3NzNkNmVlM2MwNy5kbGwAc2V0X0lzQm9keUh0bWwAc2V0X1NlY3VyaXR5UHJvdG9j
-b2wAc2V0X0VuYWJsZVNzbABnZXRfSXRlbQBTeXN0ZW0Ac2V0X0Zyb20ATG9hZEZyb20ARW51bQBy
-ZXNvdXJjZU1hbgBTY3JpcHRNYWluAEFwcERvbWFpbgBnZXRfQ3VycmVudERvbWFpbgByZWdpb24A
-U3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rp
-b24AR3JvdXBDb2xsZWN0aW9uAE1haWxBZGRyZXNzQ29sbGVjdGlvbgBFeGNlcHRpb24AanNvbgBB
-bWF6b24AZ2V0X1RvAEN1bHR1cmVJbmZvAEdyb3VwAERpcmVjdG9yeVNlcGFyYXRvckNoYXIAU3Bl
-Y2lhbEZvbGRlcgBzZW5kZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgBBV1NTREsuU2VjcmV0c01hbmFn
-ZXIAQW1hem9uLlNlY3JldHNNYW5hZ2VyAFNlcnZpY2VQb2ludE1hbmFnZXIAUmVzb2x2ZUV2ZW50
-SGFuZGxlcgBTdHJpbmdDb21wYXJlcgBfaW1wb3J0c0RpcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRp
-YWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNl
-cwBTVF9kMWRjYzUwNDIxY2U0NmI5OWE5ZGY1ODQwZWJjNjlhOS5Qcm9wZXJ0aWVzLlJlc291cmNl
-cy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU1RfZDFkY2M1MDQyMWNlNDZiOTlhOWRmNTg0MGVi
-YzY5YTkuUHJvcGVydGllcwBnZXRfVmFyaWFibGVzAFNldHRpbmdzAFJlc29sdmVFdmVudEFyZ3MA
-YXJncwBzZXRfQ3JlZGVudGlhbHMAU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zAGdldF9H
-cm91cHMAZ2V0X1N1Y2Nlc3MATWFpbEFkZHJlc3MAZ2V0X0R0cwBTY3JpcHRSZXN1bHRzAEV4aXN0
-cwBDb25jYXQAT2JqZWN0AHNldF9TdWJqZWN0AFN5c3RlbS5OZXQAZ2V0X0RlZmF1bHQAc2V0X1Rh
-c2tSZXN1bHQAU210cENsaWVudABBbWF6b25TZWNyZXRzTWFuYWdlckNsaWVudABFbnZpcm9ubWVu
-dABSZWdpb25FbmRwb2ludABzZXRfUG9ydABHZXRTZWNyZXRWYWx1ZVJlcXVlc3QASUNyZWRlbnRp
-YWxzQnlIb3N0AGdldF9Ob3cAUmVnZXgAc2V0X0JvZHkAZ2V0X0Fzc2VtYmx5AElzTnVsbE9yRW1w
-dHkAAAAAAAMiAAA3IgBcAHMAKgA6AFwAcwAqACIAKAAoAD8AOgBbAF4AIgBcAFwAXQB8AFwAXAAu
-ACkAKgApACIAAA9GAGkAZQBsAGQAIAAnAAEtJwAgAG4AbwB0ACAAZgBvAHUAbgBkACAAaQBuACAA
-cwBlAGMAcgBlAHQALgABBVwAIgAABVwAXAAAA1wAACNVAHMAZQByADoAOgBJAG0AcABvAHIAdABz
-AFAAYQB0AGgAACskAFAAcgBvAGoAZQBjAHQAOgA6AEUAbgBhAGIAbABlAEUAbQBhAGkAbAAAHUEA
-RABQACAAUwBGAFQAUAAgAEYAaQBsAGUAcwAAT04AbwAgAGYAaQBsAGUAcwAgAHcAZQByAGUAIAB1
-AHAAbABvAGEAZABlAGQAIAB0AG8AIAB0AGgAZQAgAEEARABQACAAUwBGAFQAUAAuAAApJABQAHIA
-bwBqAGUAYwB0ADoAOgBTAE0AVABQAFMAZQByAHYAZQByAAAlJABQAHIAbwBqAGUAYwB0ADoAOgBT
-AE0AVABQAFAAbwByAHQAAC8kAFAAcgBvAGoAZQBjAHQAOgA6AEEAdwBzAFMAZQBjAHIAZQB0AE4A
-YQBtAGUAACckAFAAcgBvAGoAZQBjAHQAOgA6AEEAdwBzAFIAZQBnAGkAbwBuAAARVQBzAGUAcgBO
-AGEAbQBlAAARUABhAHMAcwB3AG8AcgBkAAAfVQBzAGUAcgA6ADoARQBtAGEAaQBsAEYAcgBvAG0A
-ABtVAHMAZQByADoAOgBFAG0AYQBpAGwAVABvAAAbVQBzAGUAcgA6ADoARQBtAGEAaQBsAEMAQwAA
-J3kAeQB5AHkALQBNAE0ALQBkAGQAIABIAEgAOgBtAG0AOgBzAHMAAQcgAEAAIAAAcVMAVABfAGQA
-MQBkAGMAYwA1ADAANAAyADEAYwBlADQANgBiADkAOQBhADkAZABmADUAOAA0ADAAZQBiAGMANgA5
-AGEAOQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAARU0AaQBjAHIA
-bwBzAG8AZgB0ACAAUwBRAEwAIABTAGUAcgB2AGUAcgBcADEANgAwAFwARABUAFMAXABUAGEAcwBr
-AHMAAB1OAFUARwBFAFQAXwBQAEEAQwBLAEEARwBFAFMAAA0uAG4AdQBnAGUAdAAAEXAAYQBjAGsA
-YQBnAGUAcwAAF0EAVwBTAFMARABLAC4AQwBvAHIAZQAAH0EAVwBTAFMARABLAC4AQwBvAHIAZQAu
-AGQAbABsAABbYQB3AHMAcwBkAGsALgBjAG8AcgBlAFwAMwAuADcALgA1ADAAMABcAGwAaQBiAFwA
-bgBlAHQANAA1AFwAQQBXAFMAUwBEAEsALgBDAG8AcgBlAC4AZABsAGwAACtBAFcAUwBTAEQASwAu
-AFMAZQBjAHIAZQB0AHMATQBhAG4AYQBnAGUAcgAAM0EAVwBTAFMARABLAC4AUwBlAGMAcgBlAHQA
-cwBNAGEAbgBhAGcAZQByAC4AZABsAGwAAICDYQB3AHMAcwBkAGsALgBzAGUAYwByAGUAdABzAG0A
-YQBuAGEAZwBlAHIAXAAzAC4ANwAuADUAMAAwAFwAbABpAGIAXABuAGUAdAA0ADUAXABBAFcAUwBT
-AEQASwAuAFMAZQBjAHIAZQB0AHMATQBhAG4AYQBnAGUAcgAuAGQAbABsAADY5V7l/H2OSof+yQ2z
-wpzkAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFxAgYOBQAAEoCBBSACARwYBiABARKAhQUHAhI9
-DgYAARKAiQ4GIAEBEoCJCCABEoCREoCNAyAADgYAAw4ODg4HAAISgJ0ODgMgAAIFIAASgKkGIAES
-gKEIBSACDg4OBSAAEoCxBSAAEoC1BiABEoC5HAMgABwOBwoIDg4ODg4ODhJBEUUGAAEBEYDFBAAA
-EUUEIAEODgYgAQESgMkFIAASgM0IFRKA0QESgMkFIAEBEwAEIAEBAgUgAgEODgYgAQESgN0FIAEB
-EkEIAAESgOERgOUEIAASVQYgAgEOElUVBwoSXQ4OHQ4DFRJhAg4dDh0OCA4OBgABDhGA7QUAAg4O
-DgQAAQ4OBSABDh0DAgYDBQAAEoD5BxUSYQIOHQ4KIAEBFRKA/QETAAcgAgETABMBCCACAhMAEBMB
-BAABAg4FAAESVQ4It3pcVhk04IkIiYRdzYCAzJEIiFwoYH+Y5gQEAAAAAAQBAAAAAwYSaQMGEm0D
-BhIQAgYIAwYRFAMGEhgDAAABBAAAEmkEAAASbQUAAQESbQQAABIQByACElUcElkECAASaQQIABJt
-BAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEA
-I1NUX2QxZGNjNTA0MjFjZTQ2Yjk5YTlkZjU4NDBlYmM2OWE5AAAFAQAAAAAWAQARQ29weXJpZ2h0
-IEAgIDIwMTMAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlz
-cGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43ALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291
-cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1u
-ZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMu
-UnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAMPwAAAAAAAAAAAAAmPwAA
-ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGD8AAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVl
-LmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
-AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
-AAAaBAAAAAAAAAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv
-/gAAAQAAAAEAkC8gJgAAAQCQLyAmPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYA
-YQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAA
-ALAEegMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAwADAAMAAwADQA
-YgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBh
-AG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAFQA
-XwBkADEAZABjAGMANQAwADQAMgAxAGMAZQA0ADYAYgA5ADkAYQA5AGQAZgA1ADgANAAwAGUAYgBj
-ADYAOQBhADkAAAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AOQA3ADYA
-MAAuADEAMgAxADcANgAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQAXwAy
-ADkANgBjADcAZgA2ADAANwAzADQAZgA0ADEAYgAyAGIAZgA1ADAAOQA3ADcAMwBkADYAZQBlADMA
-YwAwADcALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBw
-AHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADEAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUA
-bQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAA
-AFMAVABfADIAOQA2AGMANwBmADYAMAA3ADMANABmADQAMQBiADIAYgBmADUAMAA5ADcANwAzAGQA
-NgBlAGUAMwBjADAANwAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABT
-AFQAXwBkADEAZABjAGMANQAwADQAMgAxAGMAZQA0ADYAYgA5ADkAYQA5AGQAZgA1ADgANAAwAGUA
-YgBjADYAOQBhADkAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAu
-ADkANwA2ADAALgAxADIAMQA3ADYAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMA
-aQBvAG4AAAAxAC4AMAAuADkANwA2ADAALgAxADIAMQA3ADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAOD8AAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </ScriptProject>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2039,7 +1839,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_e1eccfcac18b4a23ad3edf119f5e84cd"
-          VSTAMajorVersion="17"
+          VSTAMajorVersion="15"
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="$Project::SMTPServer,$Project::SMTPPort,$Project::AwsSecretName,$Project::AwsRegion,User::ImportsPath,User::EmailFrom,User::EmailTo,User::EmailCC,$Project::EnableEmail">
@@ -2442,8 +2242,8 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>I:\Git Solutions\ADPMonthlyDNC_Upgrade\Imports\AWSSDK.Core.dll</HintPath>
     </Reference>
@@ -2495,7 +2295,7 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
         <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
         <Host Name="ScriptTask" />
         <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -2509,7 +2309,7 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
     <msb:CodeName>ST_e1eccfcac18b4a23ad3edf119f5e84cd</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_e1eccfcac18b4a23ad3edf119f5e84cd</msb:DisplayName>
-    <msb:ProjectId>{CC09ECA0-BC50-42AA-B06A-2A1A80194742}</msb:ProjectId>
+    <msb:ProjectId>{816A7675-18C5-46C0-887C-E603DAC0C01C}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_e1eccfcac18b4a23ad3edf119f5e84cd.csproj" />
@@ -2628,277 +2428,6 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9.Properties {
         }
     }
 }]]></ProjectItem>
-          <BinaryItem
-            Name="ST_e1eccfcac18b4a23ad3edf119f5e84cd.dll">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
-xgAGACkDuggGABwI7QgGAKMH5AYSAPkC5QUSAFoD5QUSAKwCzwYGACMFdwYGAKwGdwYGAH4IdwYa
-ALMKlQcOAMsKmAUOANoCmAUGAJYBdwYSABsLvAkSACoFvAkSAK8HvAkGAHMHdwYSABsHvAkSAIgC
-vAkKANMFXQUeAIMJDwIeAI0BDwIGADEAdwYSAGoIRQoSADcCRQoSAAIK+wUSACsH+wUGABAAtAUS
-AIEK+wUSAIYFRQoSAOEKRQoeAN8JDwIeACwIDwIWADoBfQcWAMwHfQcGAEcCdwYGAKIBdwYGAKcK
-dwYLAQMIAAAGADkFfAAGAMcHdwYGAJIIdwYGAB0AxgAGAMYBfAAAAAAAbAAAAAAAAQABAAEAAACh
-BkgAOQABAAEAAAAQAPQIUAlhAAIACAAAARAAjQlQCYkABAAMAAMBAAAWCgAAWQAFAA8AAyEQAMIA
-AABhAAgADwARAKEIHAARAJUGxAERAHgCyAERAGMBzAEGBqUA0AFWgPoJ0wFWgFgC0wE2AEQA1wFQ
-IAAAAACRGLMI2wEBAHggAAAAAJEAGgVWAQEAyCAAAAAAkQAbAVYBAwA4IQAAAACGAKcGBgAFAKwh
-AAAAAIYACwbWAAUAWCMAAAAAhgAqC08ABwBwJQAAAACGGK0IBgAHAHglAAAAAIMYrQgGAAcAgCUA
-AAAAkwgYCN8BBwCsJQAAAACTCGAC5AEHALMlAAAAAJMIbALpAQcAuyUAAAAAlghQCu8BCADCJQAA
-AACGGK0IBgAIAMolAAAAAJEYswjbAQgA1iUAAAAAkRizCNsBCAB4JQAAAACGGK0IBgAIAOQlAAAA
-AIMAAQD0AQgAAAABAO4BAAACAMgGAAABAJAHAAACANQBAAABAD0KAAACADsLAAABAMwEAAABABEI
-AAACAKcJCQCtCAEAEQCtCAYAGQCtCAoAKQCtCBAAMQCtCBAAOQCtCBAAQQCtCBAASQCtCBAAUQCt
-CBAAWQCtCBAAYQCtCBAAaQCtCAYAuQCtCAYA6QCtCAYACQGtCBUAGQFVCxwAIQG2Bh8AKQGtCCUA
-IQHSBCsAMQHeATgAeQCtCD8AOQGtCAYAOQHhABAAeQC9BEYAQQEJBU8ASQHxAgYAGQErClMAUQEq
-BVoAYQH2CWIAaQGtCBAAWQHrCWYAcQFuBmwAeQGnBE8AGQFbAXMAcQAOCn4AgQF/CYQAiQFuBooA
-kQGnBJEAwQAABU8AgQFcCgEAoQFLBqQAiQATC6sAiQAABbAAgQCtCAYAsQGtCBAAgQB+BrUAgQCc
-B7wADAAXAcsAgQB1ALwAuQEXARAAgQA5ChAAgQA8BtEAgQAhCxAAyQGtCBAAyQHCCgEA0QGtCNYA
-yQGsCdwAyQFgBtEAyQFPAeMAkQCtCAYAkQBUAfYAgQHbCfwA4QFuBgIBgQH5BpEA6QFBBwkBoQCt
-CA4B8QH0CgEAoQDnBxUB+QFuBhoB+QHuAGIA6QFTBx8BcQCtCAYAwQCtCAYAAQK0ASQBAQJACy0B
-8QCtCDIBEQGtCAYA0QDLAU8A2QCtCBAAEQIwBU8BIQIvAlYBEQJ/AVwBIQIvAlMAGQEyAWEBIQK1
-B2cBKQIABU8AGQErClYBMQLEAmoBFACtCHgBFAAXAYMB2QDLAU8AFACxBIsBGQFNC5QBQQIkCpQB
-yQCHBpkBCAAYALoBCAAcAL8BKQB7ADMCLgALAAsCLgATABQCLgAbADMCLgAjADwCLgArAGUCLgAz
-AGUCLgA7AGUCLgBDADwCLgBLAGsCLgBTAGUCLgBbAIICQwBjAL8BSQB7ADMCYwBzAL8BgQBrAL8B
-wwBrAL8BMgB5AJUA6QA5AQMAAQAEAAMAAAAcCPwBAACAAgECAABUCgYCAgAJAAMAAgAKAAUAAQAL
-AAUAAgAMAAcAwgBwAQSAAAABAAAAICarLwAAAAAAAPMAAAAEAAAAAAAAAAAAAACfAbkAAAAAABEA
-AAAAAAAAAAAAAKgBPgUAAAAAAwADAAAAAAAAAAAAsQE+CAAAAAAEAAAAAAAAAAAAAACfAXcGAAAA
-AAQAAAAAAAAAAAAAAJ8BrQAAAAAAAwADAAAAAAAAAAAAsQFMAgAAAAARAAAAAAAAAAAAAACoAYYA
-AAAAAAAAAAABAAAA/ggAAAUAAgAGAAIAAAAAAAA8LmNjdG9yPmJfXzFfMABDb2xsZWN0aW9uYDEA
-SUVxdWFsaXR5Q29tcGFyZXJgMQBJbnQzMgBEaWN0aW9uYXJ5YDIAPD45AFNUX2QxZGNjNTA0MjFj
-ZTQ2Yjk5YTlkZjU4NDBlYmM2OWE5ADxNb2R1bGU+AGdldF9DQwBTeXN0ZW0uSU8ATWljcm9zb2Z0
-LlNxbFNlcnZlci5NYW5hZ2VkRFRTAHZhbHVlX18AU3lzdGVtLkRhdGEAbXNjb3JsaWIAPD5jAFN5
-c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAHNldF9TZWNyZXRJZABSZWFkAFNUX2UxZWNjZmNhYzE4
-YjRhMjNhZDNlZGYxMTlmNWU4NGNkAEFkZABFeHRyYWN0SnNvblN0cmluZ0ZpZWxkAFRyaW1FbmQA
-RGJDb21tYW5kAFNxbENvbW1hbmQAU2VuZABBcHBlbmQAUmVwbGFjZQBkZWZhdWx0SW5zdGFuY2UA
-TWFpbE1lc3NhZ2UAR2V0RW52aXJvbm1lbnRWYXJpYWJsZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlw
-ZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBGaWxlAGdldF9OYW1lAGZpZWxkTmFtZQBHZXRCeVN5
-c3RlbU5hbWUAc2VjcmV0TmFtZQBBc3NlbWJseU5hbWUARGF0ZVRpbWUATWljcm9zb2Z0LlNxbFNl
-cnZlci5EdHMuUnVudGltZQBDb21iaW5lAFNlY3VyaXR5UHJvdG9jb2xUeXBlAEFXU1NESy5Db3Jl
-AEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAENhcHR1cmUA
-VlNUQVJUU2NyaXB0T2JqZWN0TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAGdldF9P
-cmRpbmFsSWdub3JlQ2FzZQBHZXRTZWNyZXRWYWx1ZVJlc3BvbnNlAERpc3Bvc2UARWRpdG9yQnJv
-d3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29k
-ZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBB
-c3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZy
-YW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlE
-ZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2Vt
-Ymx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0
-VGFza0VudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVD
-b21wYXRpYmlsaXR5QXR0cmlidXRlAGdldF9WYWx1ZQBUcnlHZXRWYWx1ZQBHZXRTZWNyZXRWYWx1
-ZQB2YWx1ZQBhZGRfQXNzZW1ibHlSZXNvbHZlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9T
-dHJpbmcAZ2V0X1NlY3JldFN0cmluZwBHZXRTZWNyZXRTdHJpbmcATWF0Y2gAR2V0Rm9sZGVyUGF0
-aABNaWNyb3NvZnQuU3FsU2VydmVyLlNjcmlwdFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMu
-VGFza3MuU2NyaXB0VGFzawBOZXR3b3JrQ3JlZGVudGlhbABBbWF6b24uU2VjcmV0c01hbmFnZXIu
-TW9kZWwAU3lzdGVtLkNvbGxlY3Rpb25zLk9iamVjdE1vZGVsAFNjcmlwdE9iamVjdE1vZGVsAFN5
-c3RlbS5Db21wb25lbnRNb2RlbABTeXN0ZW0uTmV0Lk1haWwAc2VuZE1haWwAU1RfZTFlY2NmY2Fj
-MThiNGEyM2FkM2VkZjExOWY1ZTg0Y2QuZGxsAHNldF9Jc0JvZHlIdG1sAHNldF9TZWN1cml0eVBy
-b3RvY29sAHNldF9FbmFibGVTc2wAZ2V0X0l0ZW0AU3lzdGVtAHNldF9Gcm9tAExvYWRGcm9tAEVu
-dW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBBcHBEb21haW4AZ2V0X0N1cnJlbnREb21haW4AcmVn
-aW9uAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAGdldF9UcmFuc2Fj
-dGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBHcm91cENvbGxlY3Rpb24ATWFpbEFkZHJlc3NDb2xsZWN0
-aW9uAEFjcXVpcmVDb25uZWN0aW9uAFJlbGVhc2VDb25uZWN0aW9uAFNxbENvbm5lY3Rpb24ARXhj
-ZXB0aW9uAFN5c3RlbS5EYXRhLkNvbW1vbgBqc29uAEFtYXpvbgBnZXRfVG8AQ3VsdHVyZUluZm8A
-R3JvdXAARGlyZWN0b3J5U2VwYXJhdG9yQ2hhcgBEYkRhdGFSZWFkZXIAU3FsRGF0YVJlYWRlcgBF
-eGVjdXRlUmVhZGVyAFN0cmluZ0J1aWxkZXIAU3BlY2lhbEZvbGRlcgBzZW5kZXIAZ2V0X1Jlc291
-cmNlTWFuYWdlcgBDb25uZWN0aW9uTWFuYWdlcgBBV1NTREsuU2VjcmV0c01hbmFnZXIAQW1hem9u
-LlNlY3JldHNNYW5hZ2VyAFNlcnZpY2VQb2ludE1hbmFnZXIAUmVzb2x2ZUV2ZW50SGFuZGxlcgBT
-dHJpbmdDb21wYXJlcgBfaW1wb3J0c0RpcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNz
-AFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTVF9kMWRj
-YzUwNDIxY2U0NmI5OWE5ZGY1ODQwZWJjNjlhOS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJj
-ZXMARGVidWdnaW5nTW9kZXMAU1RfZDFkY2M1MDQyMWNlNDZiOTlhOWRmNTg0MGViYzY5YTkuUHJv
-cGVydGllcwBnZXRfVmFyaWFibGVzAFNldHRpbmdzAFJlc29sdmVFdmVudEFyZ3MAYXJncwBzZXRf
-Q3JlZGVudGlhbHMAU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zAGdldF9Db25uZWN0aW9u
-cwBnZXRfR3JvdXBzAGdldF9TdWNjZXNzAE1haWxBZGRyZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0
-cwBFeGlzdHMAQ29uY2F0AE9iamVjdABzZXRfU3ViamVjdABTeXN0ZW0uTmV0AGdldF9EZWZhdWx0
-AHNldF9UYXNrUmVzdWx0AFN5c3RlbS5EYXRhLlNxbENsaWVudABTbXRwQ2xpZW50AEFtYXpvblNl
-Y3JldHNNYW5hZ2VyQ2xpZW50AEVudmlyb25tZW50AFJlZ2lvbkVuZHBvaW50AHNldF9Qb3J0AEdl
-dFNlY3JldFZhbHVlUmVxdWVzdABJQ3JlZGVudGlhbHNCeUhvc3QAc2V0X0NvbW1hbmRUaW1lb3V0
-AFN5c3RlbS5UZXh0AGdldF9Ob3cAUmVnZXgAc2V0X0JvZHkAR2V0Rm9ybWF0dGVkRW1haWxCb2R5
-AGdldF9Bc3NlbWJseQBJc051bGxPckVtcHR5AAAAAyIAADciAFwAcwAqADoAXABzACoAIgAoACgA
-PwA6AFsAXgAiAFwAXABdAHwAXABcAC4AKQAqACkAIgAAD0YAaQBlAGwAZAAgACcAAS0nACAAbgBv
-AHQAIABmAG8AdQBuAGQAIABpAG4AIABzAGUAYwByAGUAdAAuAAEFXAAiAAAFXABcAAADXAAAI1UA
-cwBlAHIAOgA6AEkAbQBwAG8AcgB0AHMAUABhAHQAaAAAKyQAUAByAG8AagBlAGMAdAA6ADoARQBu
-AGEAYgBsAGUARQBtAGEAaQBsAAAdQQBEAFAAIABTAEYAVABQACAARgBpAGwAZQBzAAApJABQAHIA
-bwBqAGUAYwB0ADoAOgBTAE0AVABQAFMAZQByAHYAZQByAAAlJABQAHIAbwBqAGUAYwB0ADoAOgBT
-AE0AVABQAFAAbwByAHQAAC8kAFAAcgBvAGoAZQBjAHQAOgA6AEEAdwBzAFMAZQBjAHIAZQB0AE4A
-YQBtAGUAACckAFAAcgBvAGoAZQBjAHQAOgA6AEEAdwBzAFIAZQBnAGkAbwBuAAARVQBzAGUAcgBO
-AGEAbQBlAAARUABhAHMAcwB3AG8AcgBkAAAfVQBzAGUAcgA6ADoARQBtAGEAaQBsAEYAcgBvAG0A
-ABtVAHMAZQByADoAOgBFAG0AYQBpAGwAVABvAAAbVQBzAGUAcgA6ADoARQBtAGEAaQBsAEMAQwAA
-J3kAeQB5AHkALQBNAE0ALQBkAGQAIABIAEgAOgBtAG0AOgBzAHMAAQcgAEAAIAAATTwAaAB0AG0A
-bAA+ADwAYgBvAGQAeQA+ADwAaAAyAD4AQQBEAFAAIABEAGEAdABhACAATwB2AGUAcgB2AGkAZQB3
-ADwALwBoADIAPgAAgZk8AGYAbwBuAHQAIABzAGkAegBlAD0AJwAxADAAcAB4ACcAPgBUAGgAZQAg
-AEEARABQACAAUABoAG8AbgBlACAAYQBuAGQAIABFAG0AYQBpAGwAIABmAGkAbABlAHMAIABoAGEA
-dgBlACAAYgBlAGUAbgAgAHAAcgBvAGMAZQBzAHMAZQBkACAAcwB1AGMAYwBlAHMAcwBmAHUAbABs
-AHkALAAgAGEAbgBkACAAdABoAGUAIABkAGEAdABhAGIAYQBzAGUAIABoAGEAcwAgAGIAZQBlAG4A
-IAB1AHAAZABhAHQAZQBkACAAdwBpAHQAaAAgAHQAaABlACAAbABhAHQAZQBzAHQAIABBAEQAUAAg
-AGQAYQB0AGEALgAgAEIAZQBsAG8AdwAgAGEAcgBlACAAcwBhAG0AcABsAGUAIAByAGUAYwBvAHIA
-ZABzACAAZgBvAHIAIAB0AGUAcwB0AGkAbgBnACAAdABoAGUAIABBAEQAUAAgAGQAYQB0AGEALgA8
-AC8AZgBvAG4AdAA+ADwALwBCAFIAPgABZTwAdABhAGIAbABlACAAYgBvAHIAZABlAHIAPQAnADEA
-JwAgAGMAZQBsAGwAcABhAGQAZABpAG4AZwA9ACcANQAnACAAYwBlAGwAbABzAHAAYQBjAGkAbgBn
-AD0AJwAwACcAPgABgL08AHQAcgA+ADwAdABoAD4ARQBJAE4APAAvAHQAaAA+ADwAdABoAD4AUABs
-AGEAbgBOAHUAbQBiAGUAcgA8AC8AdABoAD4APAB0AGgAPgBTAHAAbwBuAHMAbwByAE4AYQBtAGUA
-PAAvAHQAaAA+ADwAdABoAD4ARQBtAGEAaQBsADwALwB0AGgAPgA8AHQAaAA+AFAAaABvAG4AZQBO
-AHUAbQBiAGUAcgA8AC8AdABoAD4APAAvAHQAcgA+AACJMQ0ACgAgACAAIAAgACAAIAAgACAAIAAg
-ACAAIABTAEUATABFAEMAVAAgAEQASQBTAFQASQBOAEMAVAAgAFQATwBQACAAMgAwACAADQAKACAA
-IAAgACAAIAAgACAAIAAgACAAIAAgAGUALgBFAEkATgAsACAADQAKAAkAIAAgACAAIAAgACAAIAAg
-AGUALgBQAGwAYQBuAE4AdQBtAGIAZQByACwADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgAGUA
-LgBOAGEAbQBlACAAQQBTACAAUwBwAG8AbgBzAG8AcgBOAGEAbQBlACwAIAANAAoAIAAgACAAIAAg
-ACAAIAAgACAAIAAgACAAagAuAEUAbQBhAGkAbAAsACAADQAKACAAIAAgACAAIAAgACAAIAAgACAA
-IAAgAHMALgBQAGgAbwBuAGUATgB1AG0AYgBlAHIADQAKACAAIAAgACAAIAAgACAAIABGAFIATwBN
-ACAARQBJAE4AcwBBAG4AZABQAGwAYQBuAE4AdQBtAGIAZQByAHMAIABlAA0ACgAgACAAIAAgACAA
-IAAgACAASQBOAE4ARQBSACAASgBPAEkATgAgAFMAcABvAG4AcwBvAHIAcwAgAHMAIAANAAoAIAAg
-ACAAIAAgACAAIAAgACAAIAAgACAATwBOACAAZQAuAEUASQBOACAAPQAgAHMALgBFAEkATgANAAoA
-IAAgACAAIAAgACAAIAAgAEkATgBOAEUAUgAgAEoATwBJAE4AIABzAG8AbAByAC4ATABhAHQAZQBz
-AHQARgBpAGwAaQBuAGcASQBEAHMAIABsACAADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgAE8A
-TgAgAGUALgBGAGkAbABpAG4AZwBJAEQAIAA9ACAAbAAuAEYAaQBsAGkAbgBnAEkARAANAAoAIAAg
-ACAAIAAgACAAIAAgAEkATgBOAEUAUgAgAEoATwBJAE4AIABQAGwAYQBuAHMAXwBQAGwAYQBuAEMA
-bwBuAHQAYQBjAHQAcwAgAHAAcAAgAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIABPAE4AIABl
-AC4AUABsAGEAbgBJAEQAIAA9ACAAcABwAC4AUABsAGEAbgBJAEQADQAKACAAIAAgACAAIAAgACAA
-IABJAE4ATgBFAFIAIABKAE8ASQBOACAAUABsAGEAbgBDAG8AbgB0AGEAYwB0AHMAIABwACAADQAK
-ACAAIAAgACAAIAAgACAAIAAgACAAIAAgAE8ATgAgAHAAcAAuAFAAbABhAG4AQwBvAG4AdABhAGMA
-dABJAEQAIAA9ACAAcAAuAFAAbABhAG4AQwBvAG4AdABhAGMAdABJAEQADQAKACAAIAAgACAAIAAg
-ACAAIABJAE4ATgBFAFIAIABKAE8ASQBOACAASgBEAEMAbwBuAHQAYQBjAHQAcwBEAE4AQwAgAGoA
-IAANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAATwBOACAAcAAuAEUAbQBhAGkAbABBAGQAZABy
-AGUAcwBzACAAPQAgAGoALgBFAG0AYQBpAGwADQAKACAAIAAgACAAIAAgACAAIABJAE4ATgBFAFIA
-IABKAE8ASQBOACAASgBEAEMAbwBuAHQAYQBjAHQAcwBQAGgAbwBuAGUARABOAEMAIABqAHAAIAAN
-AAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAATwBOACAAcwAuAFAAaABvAG4AZQBOAHUAbQBiAGUA
-cgAgAD0AIABqAHAALgBQAGgAbwBuAGUADQAKACAAIAAgACAAIAAgACAAIABJAE4ATgBFAFIAIABK
-AE8ASQBOACAAKAANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAUwBFAEwARQBDAFQAIABGAGkA
-bABpAG4AZwBJAEQAIABGAFIATwBNACAAUAByAG8AcwBwAGUAYwB0AG8AcgAuAEYAaQBsAHQAZQBy
-AGUAZABGAGkAbABpAG4AZwBzAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIABVAE4ASQBPAE4A
-IABBAEwATAANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAUwBFAEwARQBDAFQAIABGAGkAbABp
-AG4AZwBJAEQAIABGAFIATwBNACAARwByAG8AdQBwAEkAbgBzAHUAcgBhAG4AYwBlAC4ARgBpAGwA
-dABlAHIAZQBkAEYAaQBsAGkAbgBnAHMADQAKACAAIAAgACAAIAAgACAAIAApACAAZgAgAA0ACgAg
-ACAAIAAgACAAIAAgACAAIAAgACAAIABPAE4AIABlAC4ARgBpAGwAaQBuAGcASQBEACAAPQAgAGYA
-LgBGAGkAbABpAG4AZwBJAEQADQAKACAAIAAgACAAIAAgACAAIABXAEgARQBSAEUAIABlAC4ARgBp
-AGwAaQBuAGcAWQBlAGEAcgAgAD4APQAgACgADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAA
-IAAgACAAUwBFAEwARQBDAFQAIABFAG4AZABfAFkAZQBhAHIAIAAtACAAMQAgAA0ACgAgACAAIAAg
-ACAAIAAgACAAIAAgACAAIAAgACAAIAAgAEYAUgBPAE0AIABkAGIAbwAuAEkAbQBwAG8AcgB0AFMA
-ZQB0AHQAaQBuAGcAcwAgAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFcASABF
-AFIARQAgAFMAbwB1AHIAYwBlACAAPQAgACcAUAByAG8AcwBwAGUAYwB0AG8AcgAnAA0ACgAgACAA
-IAAgACAAIAAgACAAIAAgACAAIAApAA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIABBAE4ARAAg
-AEkAUwBOAFUATABMACgAcAAuAEUAbQBhAGkAbABBAGQAZAByAGUAcwBzACwAIAAnACcAKQAgACEA
-PQAgACcAJwANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAQQBOAEQAIABJAFMATgBVAEwATAAo
-AHMALgBQAGgAbwBuAGUATgB1AG0AYgBlAHIALAAgACcAJwApACAAIQA9ACAAJwAnAAEfRQBtAGEA
-aQBsAEMAbwBuAG4AZQBjAHQAaQBvAG4AAAk8AHQAcgA+AAAJPAB0AGQAPgAAB0UASQBOAAALPAAv
-AHQAZAA+AAAVUABsAGEAbgBOAHUAbQBiAGUAcgAAF1MAcABvAG4AcwBvAHIATgBhAG0AZQAAC0UA
-bQBhAGkAbAAAF1AAaABvAG4AZQBOAHUAbQBiAGUAcgAACzwALwB0AHIAPgAAETwALwB0AGEAYgBs
-AGUAPgAAHTwALwBiAG8AZAB5AD4APAAvAGgAdABtAGwAPgAAcVMAVABfAGQAMQBkAGMAYwA1ADAA
-NAAyADEAYwBlADQANgBiADkAOQBhADkAZABmADUAOAA0ADAAZQBiAGMANgA5AGEAOQAuAFAAcgBv
-AHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAARU0AaQBjAHIAbwBzAG8AZgB0ACAA
-UwBRAEwAIABTAGUAcgB2AGUAcgBcADEANgAwAFwARABUAFMAXABUAGEAcwBrAHMAAB1OAFUARwBF
-AFQAXwBQAEEAQwBLAEEARwBFAFMAAA0uAG4AdQBnAGUAdAAAEXAAYQBjAGsAYQBnAGUAcwAAF0EA
-VwBTAFMARABLAC4AQwBvAHIAZQAAH0EAVwBTAFMARABLAC4AQwBvAHIAZQAuAGQAbABsAABbYQB3
-AHMAcwBkAGsALgBjAG8AcgBlAFwAMwAuADcALgA1ADAAMABcAGwAaQBiAFwAbgBlAHQANAA1AFwA
-QQBXAFMAUwBEAEsALgBDAG8AcgBlAC4AZABsAGwAACtBAFcAUwBTAEQASwAuAFMAZQBjAHIAZQB0
-AHMATQBhAG4AYQBnAGUAcgAAM0EAVwBTAFMARABLAC4AUwBlAGMAcgBlAHQAcwBNAGEAbgBhAGcA
-ZQByAC4AZABsAGwAAICDYQB3AHMAcwBkAGsALgBzAGUAYwByAGUAdABzAG0AYQBuAGEAZwBlAHIA
-XAAzAC4ANwAuADUAMAAwAFwAbABpAGIAXABuAGUAdAA0ADUAXABBAFcAUwBTAEQASwAuAFMAZQBj
-AHIAZQB0AHMATQBhAG4AYQBnAGUAcgAuAGQAbABsAAAATbVe42NONkCvt2N88E04mwAEIAEBCAMg
-AAEFIAEBEREEIAEBDgYgAQERgIECBg4FAAASgJEFIAIBHBgGIAEBEoCVBQcCEj0OBgABEoCZDgYg
-AQESgJkIIAESgKESgJ0DIAAOBgADDg4ODgcAAhKArQ4OAyAAAgUgABKAuQYgARKAsQgFIAIODg4E
-BwIODgUgABKAwQUgABKAxQYgARKAyRwDIAAcDgcKCA4ODg4ODg4SQRFFBgABARGA1QQAABFFBCAB
-Dg4GIAEBEoDZBSAAEoDdCBUSgOEBEoDZBSABARMABCABAQIFIAIBDg4GIAEBEoDtBSABARJBDAcG
-EkkODhJNElESVQUgARJJDgUgABKA8QYgARKA9RwEIAEcHAYgAgEOEk0EIAASVQQgARwOBCABARwI
-AAESgQERgQUEIAASZQYgAgEOEmUVBwoSbQ4OHQ4DFRJxAg4dDh0OCA4OBgABDhGBDQUAAg4ODgQA
-AQ4OBSABDh0DAgYDBQAAEoEZBxUScQIOHQ4KIAEBFRKBHQETAAcgAgETABMBCCACAhMAEBMBBAAB
-Ag4FAAESZQ4It3pcVhk04IkIiYRdzYCAzJEIiFwoYH+Y5gQEAAAAAAQBAAAAAwYSeQMGEn0DBhIQ
-AgYIAwYRFAMGEhgDAAABBAAAEnkEAAASfQUAAQESfQQAABIQByACEmUcEmkECAASeQQIABJ9BAgA
-EhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NU
-X2QxZGNjNTA0MjFjZTQ2Yjk5YTlkZjU4NDBlYmM2OWE5AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAg
-IDIwMTMAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxh
-eU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43tAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
-LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
-YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
-aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAPRPAAAAAAAAAAAAAA5QAAAAIAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
-AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAAGAAAgAAA
-AAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhgAAAaBAAAAAAA
-AAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv/gAAAQAAAAEA
-qy8gJgAAAQCrLyAmPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYAYQByAEYAaQBs
-AGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAAALAEegMAAAEA
-UwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAwADAAMAAwADQAYgAwAAAAGgAB
-AAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBhAG0AZQAAAAAA
-AAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAFQAXwBkADEAZABj
-AGMANQAwADQAMgAxAGMAZQA0ADYAYgA5ADkAYQA5AGQAZgA1ADgANAAwAGUAYgBjADYAOQBhADkA
-AAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AOQA3ADYAMAAuADEAMgAy
-ADAAMwAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQAXwBlADEAZQBjAGMA
-ZgBjAGEAYwAxADgAYgA0AGEAMgAzAGEAZAAzAGUAZABmADEAMQA5AGYANQBlADgANABjAGQALgBk
-AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
-aAB0ACAAQAAgACAAMgAwADEAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
-AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAVABfAGUA
-MQBlAGMAYwBmAGMAYQBjADEAOABiADQAYQAyADMAYQBkADMAZQBkAGYAMQAxADkAZgA1AGUAOAA0
-AGMAZAAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAFQAXwBkADEA
-ZABjAGMANQAwADQAMgAxAGMAZQA0ADYAYgA5ADkAYQA5AGQAZgA1ADgANAAwAGUAYgBjADYAOQBh
-ADkAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADkANwA2ADAA
-LgAxADIAMgAwADMAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAx
-AC4AMAAuADkANwA2ADAALgAxADIAMgAwADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAMAAAAIDAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </ScriptProject>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3056,7 +2585,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <DTS:ObjectData>
             <ScriptProject
               Name="ST_be4174b776134ac3b288a463fa6e4231"
-              VSTAMajorVersion="17"
+              VSTAMajorVersion="15"
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="User::CurrentFile"
@@ -3253,8 +2782,8 @@ namespace ST_be4174b776134ac3b288a463fa6e4231.Properties {
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
   </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="Properties\" />
@@ -3289,7 +2818,7 @@ namespace ST_be4174b776134ac3b288a463fa6e4231.Properties {
         <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
         <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
         <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -3429,7 +2958,7 @@ namespace ST_be4174b776134ac3b288a463fa6e4231
     <msb:CodeName>ST_be4174b776134ac3b288a463fa6e4231</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_be4174b776134ac3b288a463fa6e4231</msb:DisplayName>
-    <msb:ProjectId>{D07F263C-8CA6-4CB8-BB22-CCCED1BFEF95}</msb:ProjectId>
+    <msb:ProjectId>{B32E9FB0-F36D-4C68-8C88-80CD3B6FD4D8}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_be4174b776134ac3b288a463fa6e4231.csproj" />
@@ -3551,7 +3080,7 @@ namespace ST_be4174b776134ac3b288a463fa6e4231.Properties {
               <BinaryItem
                 Name="ST_be4174b776134ac3b288a463fa6e4231.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHkXjGoAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAki4A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAASGw2oAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAki4A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAEAuAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3580,9 +3109,9 @@ ADcEBgCBADcEBgCpADcEFQC5ADcEBgBxADEFHwDBAAkFJADJAKcDKQDRANICLwCJAAYDMwDZAC8E
 MwDZACAFNwDRANwCPADBAFoFAQBxADcEBgCJADcEBgDhAIkAQQDhAGkFSACRADcETQCxADcEBgAI
 ABQAZgAIABgAawApAHMA0wAuAAsAqwAuABMAtAAuABsA0wAuACMA3AAuACsABQEuADMABQEuADsA
 BQEuAEMA3AAuAEsACwEuAFMABQEuAFsAIgFDAGMAawBJAHMA0wBhAHsAawBjAGsAawAbAAMAAQAE
-AAMAAAAfBJwAAADoAKEAAABSBaYAAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAAAAEAAAAEJvxG
-AAAAAAAAAQAAAAQAAAAAAAAAAAAAAFQAVQAAAAAAEQAAAAAAAAAAAAAAXQAPAwAAAAAEAAAAAAAA
-AAAAAABUALADAAAAABEAAAAAAAAAAAAAAF0ALgAAAAAAAAAAAAEAAACIBAAABQACAAAAAFNUX2Jl
+AAMAAAAfBJwAAADoAKEAAABSBaYAAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAAAAEAAAAuJm51
+AAAAAAAAAQAAAAQAAAAAAAAAAAAAAFQAVQAAAAAADwAAAAAAAAAAAAAAXQAPAwAAAAAEAAAAAAAA
+AAAAAABUALADAAAAAA8AAAAAAAAAAAAAAF0ALgAAAAAAAAAAAAEAAACIBAAABQACAAAAAFNUX2Jl
 NDE3NGI3NzYxMzRhYzNiMjg4YTQ2M2ZhNmU0MjMxADxNb2R1bGU+AE1pY3Jvc29mdC5TcWxTZXJ2
 ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBWYXJpYWJsZQBS
 dW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0
@@ -3612,7 +3141,7 @@ AGwAZQAADWUAbQBhAGkAbABzAAApVQBzAGUAcgA6ADoARQBtAGEAaQBsAHMARgBpAGwAZQBQAGEA
 dABoAAANcABoAG8AbgBlAHMAAClVAHMAZQByADoAOgBQAGgAbwBuAGUAcwBGAGkAbABlAFAAYQB0
 AGgAAHFTAFQAXwBiAGUANAAxADcANABiADcANwA2ADEAMwA0AGEAYwAzAGIAMgA4ADgAYQA0ADYA
 MwBmAGEANgBlADQAMgAzADEALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBl
-AHMAAADBbNl2NCOqSYseHeFXYr4rAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFRAwcBDgQgABJh
+AHMAAABEDyOOJ4xDQKuCMwNkgt0JAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFRAwcBDgQgABJh
 BCAAEmUFIAESaRwDIAAcAyAADgQgAQIOBCABARwGAAEScRF1BCAAEnkGIAIBDhJ5CLd6XFYZNOCJ
 CImEXc2AgMyRBAAAAAAEAQAAAAMGEkkDBhJNAwYSEAIGCAMGERQEAAASSQQAABJNBQABARJNBAAA
 EhADAAABBAgAEkkECAASTQQIABIQCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhy
@@ -3632,14 +3161,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
 AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
-AAAAAAC9BO/+AAABAAAAAQD8RgQmAAABAPxGBCY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+AAAAAAC9BO/+AAABAAAAAQBudS4mAAABAG51LiY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
 RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
 AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
 MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
 AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
 AAAAAFMAVABfAGIAZQA0ADEANwA0AGIANwA3ADYAMQAzADQAYQBjADMAYgAyADgAOABhADQANgAz
 AGYAYQA2AGUANAAyADMAMQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
-LgA5ADcAMwAyAC4AMQA4ADEANwAyAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
+LgA5ADcANwA0AC4AMwAwADAANgAyAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
 AFMAVABfAGIAZQA0ADEANwA0AGIANwA3ADYAMQAzADQAYQBjADMAYgAyADgAOABhADQANgAzAGYA
 YQA2AGUANAAyADMAMQAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
 AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMgA2AAAAKgABAAEATABlAGcAYQBsAFQA
@@ -3648,8 +3177,8 @@ AGEAbQBlAAAAUwBUAF8AYgBlADQAMQA3ADQAYgA3ADcANgAxADMANABhAGMAMwBiADIAOAA4AGEA
 NAA2ADMAZgBhADYAZQA0ADIAMwAxAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
 AGUAAAAAAFMAVABfAGIAZQA0ADEANwA0AGIANwA3ADYAMQAzADQAYQBjADMAYgAyADgAOABhADQA
 NgAzAGYAYQA2AGUANAAyADMAMQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
-ADEALgAwAC4AOQA3ADMAMgAuADEAOAAxADcAMgAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
-VgBlAHIAcwBpAG8AbgAAADEALgAwAC4AOQA3ADMAMgAuADEAOAAxADcAMgAAAAAAAAAAAAAAAAAA
+ADEALgAwAC4AOQA3ADcANAAuADMAMAAwADYAMgAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4AOQA3ADcANAAuADMAMAAwADYAMgAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3757,7 +3286,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_67ea2de1b1a94035ab5c34c06a5a8953"
-          VSTAMajorVersion="17"
+          VSTAMajorVersion="15"
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::ArchiveFolder,User::SourceFolder">
@@ -4105,8 +3634,8 @@ namespace ST_67ea2de1b1a94035ab5c34c06a5a8953
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
   </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="Properties\" />
@@ -4141,7 +3670,7 @@ namespace ST_67ea2de1b1a94035ab5c34c06a5a8953
         <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
         <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
         <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -4155,7 +3684,7 @@ namespace ST_67ea2de1b1a94035ab5c34c06a5a8953
     <msb:CodeName>ST_67ea2de1b1a94035ab5c34c06a5a8953</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_67ea2de1b1a94035ab5c34c06a5a8953</msb:DisplayName>
-    <msb:ProjectId>{8D6D0C0D-2585-4028-8B9A-F400137F2915}</msb:ProjectId>
+    <msb:ProjectId>{F3C4F669-E8ED-4D43-B00F-8805ABF066A0}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_67ea2de1b1a94035ab5c34c06a5a8953.csproj" />
@@ -4277,7 +3806,7 @@ namespace ST_67ea2de1b1a94035ab5c34c06a5a8953.Properties {
           <BinaryItem
             Name="ST_67ea2de1b1a94035ab5c34c06a5a8953.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDALwXjGoAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAGjAA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAeGw2oAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAGjAA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMgvAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4310,8 +3839,8 @@ APEA8QBVAPkAvgU/APkAIANbAMkA3wUBAMkAswVhAHkAhwA7AHkAaAA7AAkBxQVnAAkBCwZuAAEB
 mQRxAHEAowQGAJEAowQGABEBrgB6ABEB7gWDAJkAowSJALkAowQGAAgAFACjAAgAGACoACkAcwAQ
 AS4ACwDoAC4AEwDxAC4AGwAQAS4AIwAZAS4AKwBCAS4AMwBCAS4AOwBCAS4AQwAZAS4ASwBIAS4A
 UwBCAS4AWwBfAUMAYwCoAEkAcwAQAWEAewCoAGMAawCoABsAAwABAAQAAwAAAHUE2QAAACYB3gAA
-ANcF4wACAAQAAwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAAQmHkcAAAAAAAABAAAABAAAAAAA
-AAAAAAAAkQBfAAAAAAARAAAAAAAAAAAAAACaAE0DAAAAAAQAAAAAAAAAAAAAAJEA7gMAAAAAEQAA
+ANcF4wACAAQAAwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAC4mb3UAAAAAAAABAAAABAAAAAAA
+AAAAAAAAkQBfAAAAAAAPAAAAAAAAAAAAAACaAE0DAAAAAAQAAAAAAAAAAAAAAJEA7gMAAAAADwAA
 AAAAAAAAAAAAmgA4AAAAAAAAAAAAAQAAAPQEAAAFAAIAAAAAU1RfNjdlYTJkZTFiMWE5NDAzNWFi
 NWMzNGMwNmE1YTg5NTMAPE1vZHVsZT4AU3lzdGVtLklPAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFu
 YWdlZERUUwB2YWx1ZV9fAG1zY29ybGliAGdldF9TdGFja1RyYWNlAGRlZmF1bHRJbnN0YW5jZQBn
@@ -4343,8 +3872,8 @@ ZXRfVGFza1Jlc3VsdABnZXRfQXNzZW1ibHkAQ3JlYXRlRGlyZWN0b3J5AEVtcHR5AAAAAAAlVQBz
 AGUAcgA6ADoAUwBvAHUAcgBjAGUARgBvAGwAZABlAHIAACdVAHMAZQByADoAOgBBAHIAYwBoAGkA
 dgBlAEYAbwBsAGQAZQByAAAXUwBjAHIAaQBwAHQAIABUAGEAcwBrAAADCgAAcVMAVABfADYANwBl
 AGEAMgBkAGUAMQBiADEAYQA5ADQAMAAzADUAYQBiADUAYwAzADQAYwAwADYAYQA1AGEAOAA5ADUA
-MwAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAYircyaKdOE2m
-uHwv1zvxKQAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQsHBw4dDggODg4SPQQgABJlBCAAEmkF
+MwAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAKda5qeQlCker
+PnHU5i1kegAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQsHBw4dDggODg4SPQQgABJlBCAAEmkF
 IAESbRwDIAAcAyAADgQAAQIOBQABEnUOBQABHQ4OBAABDg4FAAIODg4FAAIBDg4FIAASgIEGAAMO
 Dg4OAgYOCCAFAggODg4ICAABEoCJEYCNBSAAEoCRByACAQ4SgJEIt3pcVhk04IkIiYRdzYCAzJEE
 AAAAAAQBAAAAAwYSTQMGElEDBhIQAgYIAwYRFAQAABJNBAAAElEFAAEBElEEAAASEAMAAAEECAAS
@@ -4367,14 +3896,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
 AEgAAABYQAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
-AAAAAL0E7/4AAAEAAAABAB5HBCYAAAEAHkcEJj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAL0E7/4AAAEAAAABAG91LiYAAAEAb3UuJj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
 AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
 bgAAAAAAAACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAw
 ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
 bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
 AAAAUwBUAF8ANgA3AGUAYQAyAGQAZQAxAGIAMQBhADkANAAwADMANQBhAGIANQBjADMANABjADAA
 NgBhADUAYQA4ADkANQAzAAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
-ADkANwAzADIALgAxADgAMgAwADYAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
+ADkANwA3ADQALgAzADAAMAA2ADMAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
 UwBUAF8ANgA3AGUAYQAyAGQAZQAxAGIAMQBhADkANAAwADMANQBhAGIANQBjADMANABjADAANgBh
 ADUAYQA4ADkANQAzAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
 AABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADYAAAAqAAEAAQBMAGUAZwBhAGwAVABy
@@ -4383,8 +3912,8 @@ YQBtAGUAAABTAFQAXwA2ADcAZQBhADIAZABlADEAYgAxAGEAOQA0ADAAMwA1AGEAYgA1AGMAMwA0
 AGMAMAA2AGEANQBhADgAOQA1ADMALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0A
 ZQAAAAAAUwBUAF8ANgA3AGUAYQAyAGQAZQAxAGIAMQBhADkANAAwADMANQBhAGIANQBjADMANABj
 ADAANgBhADUAYQA4ADkANQAzAAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAA
-MQAuADAALgA5ADcAMwAyAC4AMQA4ADIAMAA2AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
-AGUAcgBzAGkAbwBuAAAAMQAuADAALgA5ADcAMwAyAC4AMQA4ADIAMAA2AAAAAAAAAAAAAAAAAAAA
+MQAuADAALgA5ADcANwA0AC4AMwAwADAANgAzAAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
+AGUAcgBzAGkAbwBuAAAAMQAuADAALgA5ADcANwA0AC4AMwAwADAANgAzAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4732,7 +4261,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4897,7 +4426,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5259,7 +4788,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <DTS:ObjectData>
             <ScriptProject
               Name="ST_73db7913903f42e7a50339a2af167f1c"
-              VSTAMajorVersion="17"
+              VSTAMajorVersion="15"
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="System::PackageName,System::SourceName,System::SourceDescription,System::ErrorDescription,System::ErrorCode,$Project::SMTPServer,$Project::SMTPPort,$Project::AwsSecretName,$Project::AwsRegion,User::ImportsPath,User::ErrorEmailFrom,User::ErrorEmailTo,$Project::EnableEmail">
@@ -5590,8 +5119,8 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=17.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>I:\Git Solutions\ADPMonthlyDNC_Upgrade\Imports\AWSSDK.Core.dll</HintPath>
     </Reference>
@@ -5632,7 +5161,7 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
         <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" />
         <Host Name="ScriptTask" />
         <ProjectClient>
-          <HostIdentifier>SSIS_ST170</HostIdentifier>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -5646,7 +5175,7 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9
     <msb:CodeName>ST_73db7913903f42e7a50339a2af167f1c</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_73db7913903f42e7a50339a2af167f1c</msb:DisplayName>
-    <msb:ProjectId>{A8FBF430-4533-46D5-AD51-DC9D01830A99}</msb:ProjectId>
+    <msb:ProjectId>{0206A3F6-EC27-470B-A7AE-9084459CE82C}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_73db7913903f42e7a50339a2af167f1c.csproj" />
@@ -5764,205 +5293,6 @@ namespace ST_d1dcc50421ce46b99a9df5840ebc69a9.Properties {
         }
     }
 }]]></ProjectItem>
-              <BinaryItem
-                Name="ST_73db7913903f42e7a50339a2af167f1c.dll">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
-KDIAAAqib04AAAoRBXKZBQBwGI0fAAABJRZyxQUAcKIlFwhy+QUAcCgyAAAKom9OAAAKEQUGb08A
-AAoSA29QAAAKLQIUKhiNHwAAASUWfgEAAASiJRcHohMGFhMHKzMRBhEHmhMIEQgoUQAACi0dEQgJ
-FpooRgAAChMJEQkoUgAACiwIEQkoUwAACioRBxdYEwcRBxEGjmkyxQkXmihSAAAKLAkJF5ooUwAA
-CioUKgBCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAACwBgAAI34AABwHAAAoCgAA
-I1N0cmluZ3MAAAAARBEAAIAGAAAjVVMAxBcAABAAAAAjR1VJRAAAANQXAACYAgAAI0Jsb2IAAAAA
-AAAAAgAAAVcdogkJAwAAAPoBMwAWAAABAAAAQAAAAAYAAAAIAAAADwAAAAcAAABTAAAAAgAAABEA
-AAADAAAAAgAAAAMAAAAEAAAAAgAAAAEAAAAGAAAAAQAAAAIAAAAAANcFAQAAAAAABgDGA/IHBgBV
-BPIHBgASA98HDwBmCAAABgA/A7wGBgCpA7wGBgCKA7wGBgA8BLwGBgDmA7wGBgD/A7wGBgBWA7wG
-BgBxA7IECgAaBCkFCgBcAikFDgCLCXkHEgA/AccFBgDSAToGBgBTBjoGBgDaAvIHBgBHCToGBgAO
-CrwGBgC7CDoGBgDFAbwGBgA3ANcABgD1At8HBgBTBxIIBgARB6cGEgDFArEFEgAmA7EFEgB4ApIG
-BgDvBDoGBgBvBjoGBgCjBzoGFgCyCQMHDgDKCWQFDgCmAmQFBgBiAToGEgD7CeEIEgD2BOEIEgAd
-B+EIBgD0BjoGEgDOBuEIEgBUAuEICgCfBSkFGgCoCNsBGgBZAdsBBgAxADoGEgCPB1oJEgADAloJ
-EgAXCccFEgDeBscFBgAQAIAFEgCACccFEgBSBVoJEgDgCVoJBgATAjoGBgBuAToGBgCmCToG6wA6
-BwAABgAFBXUABgA1BzoGBgC3BzoGBgAdANcABgCSAXUAAAAAAGwAAAAAAAEAAQABAAAAZAZIADkA
-AQABAAAAEAAZCHUIUQACAAYAAAEQALIIdQh5AAQACgADAQAAKwkAAEkABQANAAMhEADTAAAAUQAI
-AA0AEQDGBxsAEQBYBo4BEQBEApIBEQAvAZYBBgaeAJoBVoAPCZ0BVoAkAp0BNgBEAKEBUCAAAAAA
-kRjYB6UBAQB4IAAAAACRAOYE1gABAMggAAAAAJEAAwHWAAMAOCEAAAAAhgBqBgYABQAMJAAAAACG
-GNIHBgAFABQkAAAAAIMY0gcGAAUAHCQAAAAAkwhPB6kBBQBIJAAAAACTCCwCrgEFAE8kAAAAAJMI
-OAKzAQUAVyQAAAAAlghlCbkBBgBeJAAAAACGGNIHBgAGAGYkAAAAAJEY2AelAQYAciQAAAAAkRjY
-B6UBBgAUJAAAAACGGNIHBgAGAIAkAAAAAIMAAQC+AQYAAAABALoBAAACAIsGAAABAP4GAAACAKAB
-AAABAJgEAAABAEgHAAACAMwICQDSBwEAEQDSBwYAGQDSBwoAKQDSBxAAMQDSBxAAOQDSBxAAQQDS
-BxAASQDSBxAAUQDSBxAAWQDSBxAAYQDSBxAAaQDSBwYAmQDSBwYAyQDSBwYA6QDSBxUA+QAfChsA
-AQF5Bh4ACQHSByQAAQGeBCoAEQGqATcAeQDSBz4AGQHSBwYAGQHyABAAeQCJBEUAIQHVBE4AKQG9
-AgYA+QBACVIAMQH2BFkAQQELCWEASQHSBxAAOQEACWUAUQExBmsAWQFzBE4A+QAnAXIAcQAjCYwA
-YQGkCJIAaQExBpgAcQFzBJ8AoQDMBE4AeQHMBE4A+QBACaMAgQEOBqkAiQDzCbAAiQDMBLUAgQDS
-BwYAkQHSBxAAgQBBBroAgQAKB8EADAD/ANAA+QBACdYAgQBOCRAAgQD/BdwAgQABChAAqQHSBxAA
-qQHBCQEAsQHSB+EAqQHRCOcAqQEjBtwAqQEiAe4AYQFxCQEAcQDSBwYAoQDSBwYAwQGAAfQAwQEK
-Cv0A0QDSBwIB8QDSBwYAsQCXAU4AuQDSBxAA0QH8BB8B4QH7AdYA0QFLASYB4QH7AVIA+QAaASsB
-4QEjBzEB6QHMBE4A8QGQAjQBFADSB0IBFAD/AE0BuQCXAU4AFAB9BFUB+QAXCl4BAQI5CV4BqQBK
-BmMBCAAYAIQBCAAcAIkBKQB7AP0BLgALANUBLgATAN4BLgAbAP0BLgAjAAYCLgArAC8CLgAzAC8C
-LgA7AC8CLgBDAAYCLgBLADUCLgBTAC8CLgBbAEwCQwBjAIkBSQB7AP0BYwBzAIkBgQBrAIkBwwBr
-AIkBMQB4AAkBAwABAAQAAwAAAFMHxgEAAEwCywEAAGkJ0AECAAcAAwACAAgABQABAAkABQACAAoA
-BwDHADoBBIAAAAEAAAAgJr0vAAAAAAAArwAAAAQAAAAAAAAAAAAAAGkBpgAAAAAAEQAAAAAAAAAA
-AAAAcgEKBQAAAAADAAMAAAAAAAAAAAB7AWMHAAAAAAQAAAAAAAAAAAAAAGkBOgYAAAAAAwADAAAA
-AAAAAAAAewEYAgAAAAARAAAAAAAAAAAAAAByAX8AAAAAAAAAAAABAAAAIwgAAAUAAgAGAAIAAAAA
-AAA8LmNjdG9yPmJfXzFfMABDb2xsZWN0aW9uYDEASUVxdWFsaXR5Q29tcGFyZXJgMQBJbnQzMgBE
-aWN0aW9uYXJ5YDIAPD45AFNUX2QxZGNjNTA0MjFjZTQ2Yjk5YTlkZjU4NDBlYmM2OWE5ADxNb2R1
-bGU+AFN5c3RlbS5JTwBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVfXwBtc2Nv
-cmxpYgBTVF83M2RiNzkxMzkwM2Y0MmU3YTUwMzM5YTJhZjE2N2YxYwA8PmMAU3lzdGVtLkNvbGxl
-Y3Rpb25zLkdlbmVyaWMAc2V0X1NlY3JldElkAEFkZABFeHRyYWN0SnNvblN0cmluZ0ZpZWxkAFRy
-aW1FbmQAU2VuZABSZXBsYWNlAGRlZmF1bHRJbnN0YW5jZQBNYWlsTWVzc2FnZQBHZXRFbnZpcm9u
-bWVudFZhcmlhYmxlAElEaXNwb3NhYmxlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFu
-ZGxlAEZpbGUAZ2V0X05hbWUAZmllbGROYW1lAEdldEJ5U3lzdGVtTmFtZQBzZWNyZXROYW1lAEFz
-c2VtYmx5TmFtZQBEYXRlVGltZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAENvbWJp
-bmUAU2VjdXJpdHlQcm90b2NvbFR5cGUAQVdTU0RLLkNvcmUARmFpbHVyZQBnZXRfQ3VsdHVyZQBz
-ZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQ2FwdHVyZQBWU1RBUlRTY3JpcHRPYmplY3RNb2Rl
-bEJhc2UAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAZ2V0X09yZGluYWxJZ25vcmVDYXNlAEdldFNl
-Y3JldFZhbHVlUmVzcG9uc2UARGlzcG9zZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdl
-bmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVB
-dHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUA
-QXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2Vt
-Ymx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENv
-bXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFz
-c2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0
-ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUA
-Z2V0X1ZhbHVlAFRyeUdldFZhbHVlAEdldFNlY3JldFZhbHVlAHZhbHVlAGFkZF9Bc3NlbWJseVJl
-c29sdmUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBnZXRfU2VjcmV0U3RyaW5n
-AEdldFNlY3JldFN0cmluZwBNYXRjaABHZXRGb2xkZXJQYXRoAE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
-U2NyaXB0VGFzawBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAE5ldHdv
-cmtDcmVkZW50aWFsAEFtYXpvbi5TZWNyZXRzTWFuYWdlci5Nb2RlbABTeXN0ZW0uQ29sbGVjdGlv
-bnMuT2JqZWN0TW9kZWwAU2NyaXB0T2JqZWN0TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFN5
-c3RlbS5OZXQuTWFpbABTVF83M2RiNzkxMzkwM2Y0MmU3YTUwMzM5YTJhZjE2N2YxYy5kbGwAc2V0
-X0lzQm9keUh0bWwAc2V0X1NlY3VyaXR5UHJvdG9jb2wAc2V0X0VuYWJsZVNzbABnZXRfSXRlbQBT
-eXN0ZW0Ac2V0X0Zyb20ATG9hZEZyb20ARW51bQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAEFwcERv
-bWFpbgBnZXRfQ3VycmVudERvbWFpbgByZWdpb24AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVt
-Lkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24AR3JvdXBDb2xsZWN0aW9uAE1haWxBZGRy
-ZXNzQ29sbGVjdGlvbgBFeGNlcHRpb24AanNvbgBBbWF6b24AZ2V0X1RvAEN1bHR1cmVJbmZvAEdy
-b3VwAERpcmVjdG9yeVNlcGFyYXRvckNoYXIAU3BlY2lhbEZvbGRlcgBzZW5kZXIAZ2V0X1Jlc291
-cmNlTWFuYWdlcgBBV1NTREsuU2VjcmV0c01hbmFnZXIAQW1hem9uLlNlY3JldHNNYW5hZ2VyAFNl
-cnZpY2VQb2ludE1hbmFnZXIAUmVzb2x2ZUV2ZW50SGFuZGxlcgBTdHJpbmdDb21wYXJlcgBfaW1w
-b3J0c0RpcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNv
-bXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTVF9kMWRjYzUwNDIxY2U0NmI5OWE5ZGY1
-ODQwZWJjNjlhOS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMA
-U1RfZDFkY2M1MDQyMWNlNDZiOTlhOWRmNTg0MGViYzY5YTkuUHJvcGVydGllcwBnZXRfVmFyaWFi
-bGVzAFNldHRpbmdzAFJlc29sdmVFdmVudEFyZ3MAYXJncwBzZXRfQ3JlZGVudGlhbHMAU3lzdGVt
-LlRleHQuUmVndWxhckV4cHJlc3Npb25zAGdldF9Hcm91cHMAZ2V0X1N1Y2Nlc3MATWFpbEFkZHJl
-c3MAZ2V0X0R0cwBTY3JpcHRSZXN1bHRzAEV4aXN0cwBDb25jYXQAT2JqZWN0AHNldF9TdWJqZWN0
-AFN5c3RlbS5OZXQAZ2V0X0RlZmF1bHQAc2V0X1Rhc2tSZXN1bHQAU210cENsaWVudABBbWF6b25T
-ZWNyZXRzTWFuYWdlckNsaWVudABFbnZpcm9ubWVudABSZWdpb25FbmRwb2ludABzZXRfUG9ydABH
-ZXRTZWNyZXRWYWx1ZVJlcXVlc3QASUNyZWRlbnRpYWxzQnlIb3N0AGdldF9Ob3cAUmVnZXgAc2V0
-X0JvZHkAZ2V0X0Fzc2VtYmx5AElzTnVsbE9yRW1wdHkAAAAAAAMiAAA3IgBcAHMAKgA6AFwAcwAq
-ACIAKAAoAD8AOgBbAF4AIgBcAFwAXQB8AFwAXAAuACkAKgApACIAAA9GAGkAZQBsAGQAIAAnAAEt
-JwAgAG4AbwB0ACAAZgBvAHUAbgBkACAAaQBuACAAcwBlAGMAcgBlAHQALgABBVwAIgAABVwAXAAA
-A1wAACNVAHMAZQByADoAOgBJAG0AcABvAHIAdABzAFAAYQB0AGgAACdTAHkAcwB0AGUAbQA6ADoA
-UABhAGMAawBhAGcAZQBOAGEAbQBlAAAlUwB5AHMAdABlAG0AOgA6AFMAbwB1AHIAYwBlAE4AYQBt
-AGUAADNTAHkAcwB0AGUAbQA6ADoAUwBvAHUAcgBjAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAx
-UwB5AHMAdABlAG0AOgA6AEUAcgByAG8AcgBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AACNTAHkAcwB0
-AGUAbQA6ADoARQByAHIAbwByAEMAbwBkAGUAADVFAHIAcgBvAHIAIABEAGUAdABhAGkAbABzADoA
-CgAKAFAAYQBjAGsAYQBnAGUAIAATICAAAR0uAGQAdABzAHgACgAKAFQAYQBzAGsAIAATICAAAT8K
-AAoAVABhAHMAawAgAFQAeQBwAGUAIAAoAFMAUwBJAFMAIABDAG8AbQBwAG8AbgBlAG4AdAApACAA
-EyAgAAEtCgAKAEUAcgByAG8AcgAgAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAgABMgIAABHwoACgBF
-AHIAcgBvAHIAIABDAG8AZABlACAAEyAgAAEFCgAKAAArJABQAHIAbwBqAGUAYwB0ADoAOgBFAG4A
-YQBiAGwAZQBFAG0AYQBpAGwAACkkAFAAcgBvAGoAZQBjAHQAOgA6AFMATQBUAFAAUwBlAHIAdgBl
-AHIAACUkAFAAcgBvAGoAZQBjAHQAOgA6AFMATQBUAFAAUABvAHIAdAAALyQAUAByAG8AagBlAGMA
-dAA6ADoAQQB3AHMAUwBlAGMAcgBlAHQATgBhAG0AZQAAJyQAUAByAG8AagBlAGMAdAA6ADoAQQB3
-AHMAUgBlAGcAaQBvAG4AABFVAHMAZQByAE4AYQBtAGUAABFQAGEAcwBzAHcAbwByAGQAAClVAHMA
-ZQByADoAOgBFAHIAcgBvAHIARQBtAGEAaQBsAEYAcgBvAG0AACVVAHMAZQByADoAOgBFAHIAcgBv
-AHIARQBtAGEAaQBsAFQAbwAAJ3kAeQB5AHkALQBNAE0ALQBkAGQAIABIAEgAOgBtAG0AOgBzAHMA
-AS9BAEQAUAAgAFMARgBUAFAAIABGAGkAbABlAHMAIABFAHIAcgBvAHIAIABAACAAAHFTAFQAXwBk
-ADEAZABjAGMANQAwADQAMgAxAGMAZQA0ADYAYgA5ADkAYQA5AGQAZgA1ADgANAAwAGUAYgBjADYA
-OQBhADkALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAEVNAGkAYwBy
-AG8AcwBvAGYAdAAgAFMAUQBMACAAUwBlAHIAdgBlAHIAXAAxADYAMABcAEQAVABTAFwAVABhAHMA
-awBzAAAdTgBVAEcARQBUAF8AUABBAEMASwBBAEcARQBTAAANLgBuAHUAZwBlAHQAABFwAGEAYwBr
-AGEAZwBlAHMAABdBAFcAUwBTAEQASwAuAEMAbwByAGUAAB9BAFcAUwBTAEQASwAuAEMAbwByAGUA
-LgBkAGwAbAAAW2EAdwBzAHMAZABrAC4AYwBvAHIAZQBcADMALgA3AC4ANQAwADAAXABsAGkAYgBc
-AG4AZQB0ADQANQBcAEEAVwBTAFMARABLAC4AQwBvAHIAZQAuAGQAbABsAAArQQBXAFMAUwBEAEsA
-LgBTAGUAYwByAGUAdABzAE0AYQBuAGEAZwBlAHIAADNBAFcAUwBTAEQASwAuAFMAZQBjAHIAZQB0
-AHMATQBhAG4AYQBnAGUAcgAuAGQAbABsAACAg2EAdwBzAHMAZABrAC4AcwBlAGMAcgBlAHQAcwBt
-AGEAbgBhAGcAZQByAFwAMwAuADcALgA1ADAAMABcAGwAaQBiAFwAbgBlAHQANAA1AFwAQQBXAFMA
-UwBEAEsALgBTAGUAYwByAGUAdABzAE0AYQBuAGEAZwBlAHIALgBkAGwAbAAAAACreBogEoL1Qb74
-SIlN2t3vAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFxAgYOBQAAEoCBBSACARwYBiABARKAhQUH
-AhI9DgYAARKAiQ4GIAEBEoCJCCABEoCREoCNAyAADgYAAw4ODg4HAAISgJ0ODgMgAAIFIAASgKkG
-IAESgKEIBSACDg4OEwcPDg4ODggOCA4ODg4ODhJBEUUFIAASgLEFIAASgLUGIAESgLkcAyAAHAUA
-AQ4dDgYAAQERgMUEAAARRQQgAQ4OBiABARKAyQUgABKAzQgVEoDRARKAyQUgAQETAAUAAg4ODgQg
-AQECBSACAQ4OBiABARKA3QUgAQESQQgAARKA4RGA5QQgABJVBiACAQ4SVRUHChJdDg4dDgMVEmEC
-Dh0OHQ4IDg4GAAEOEYDtBAABDg4FIAEOHQMCBgMFAAASgPkHFRJhAg4dDgogAQEVEoD9ARMAByAC
-ARMAEwEIIAICEwAQEwEEAAECDgUAARJVDgi3elxWGTTgiQiJhF3NgIDMkQiIXChgf5jmBAQAAAAA
-BAEAAAADBhJpAwYSbQMGEhACBggDBhEUAwYSGAMAAAEEAAASaQQAABJtBQABARJtBAAAEhAHIAIS
-VRwSWQQIABJpBAgAEm0ECAASEAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93
-cwEIAQACAAAAAAAoAQAjU1RfZDFkY2M1MDQyMWNlNDZiOTlhOWRmNTg0MGViYzY5YTkAAAUBAAAA
-ABYBABFDb3B5cmlnaHQgQCAgMjAxMwAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBU
-DhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcAALQAAADOyu++AQAAAJEA
-AABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4w
-LjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5
-c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAc
-QQAAAAAAAAAAAAA2QQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKEEAAAAAAAAAAAAAAABfQ29y
-RGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAA
-AAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAA
-ABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+
-AAABAAAAAQC9LyAmAAABAL0vICY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBh
-AHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAA
-sAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAAMAAwADAANABi
-ADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4AeQBOAGEA
-bQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABf
-AGQAMQBkAGMAYwA1ADAANAAyADEAYwBlADQANgBiADkAOQBhADkAZABmADUAOAA0ADAAZQBiAGMA
-NgA5AGEAOQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA5ADcANgAw
-AC4AMQAyADIAMgAxAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADcA
-MwBkAGIANwA5ADEAMwA5ADAAMwBmADQAMgBlADcAYQA1ADAAMwAzADkAYQAyAGEAZgAxADYANwBm
-ADEAYwAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
-eQByAGkAZwBoAHQAIABAACAAIAAyADAAMQAzAAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBt
-AGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAA
-UwBUAF8ANwAzAGQAYgA3ADkAMQAzADkAMAAzAGYANAAyAGUANwBhADUAMAAzADMAOQBhADIAYQBm
-ADEANgA3AGYAMQBjAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMA
-VABfAGQAMQBkAGMAYwA1ADAANAAyADEAYwBlADQANgBiADkAOQBhADkAZABmADUAOAA0ADAAZQBi
-AGMANgA5AGEAOQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4A
-OQA3ADYAMAAuADEAMgAyADIAMQAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBp
-AG8AbgAAADEALgAwAC4AOQA3ADYAMAAuADEAMgAyADIAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAwAAABIMQAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </ScriptProject>
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5982,46 +5312,46 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="226,42"
+          Size="225.6,41.6"
           Id="Package\Check Files Downloaded or Not"
           TopLeft="210,107.5" />
         <NodeLayout
-          Size="180,42"
+          Size="180,41.6"
           Id="Package\Execute Process Task"
           TopLeft="233,5.5" />
         <NodeLayout
-          Size="148,42"
+          Size="148,41.6"
           Id="Package\Export Process"
           TopLeft="249,619.5" />
         <NodeLayout
-          Size="173,42"
+          Size="172.8,41.6"
           Id="Package\File not found Email"
           TopLeft="5.50000000000003,261.5" />
         <NodeLayout
-          Size="193,42"
+          Size="192.8,41.6"
           Id="Package\Final Confirmation Email"
           TopLeft="226.5,823.5" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Foreach Loop Container\Get Path of Files"
           TopLeft="5.5,5.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="167,103"
-          Size="167,146"
+          PanelSize="167.2,103.2"
+          Size="167.2,145.6"
           Id="Package\Foreach Loop Container"
           TopLeft="239.5,209.5" />
         <NodeLayout
-          Size="179,42"
+          Size="179.2,41.6"
           Id="Package\Move Files to Archive"
           TopLeft="233.5,721.5" />
         <NodeLayout
-          Size="186,42"
+          Size="185.6,41.6"
           Id="Package\Populating DNC Tables"
           TopLeft="230,517.5" />
         <NodeLayout
-          Size="179,42"
+          Size="179.2,41.6"
           Id="Package\Truncate DNC Tables"
           TopLeft="233.5,415.5" />
         <EdgeLayout

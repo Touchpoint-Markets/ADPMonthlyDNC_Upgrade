@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">CINPSQL20</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAACVtd6PHtmoE61Y91Mf+L+rnUmhMEu3DArxdIUERDpEqAAAAAAOgAAAAAIAACAAAADi/3xlo8ij3giLjxW9Eo4cY+DsFjy/88YvzEIUzSZJSpAAAACDGbdC1VmHiY6vcJXYLNSyir0sUXowoX/4ih7k7kCMXLAPZNrfMHBi3j5aR0KqVCxjALnpUUuQYI5k3lKmJxdKi6NmRtY61SKysv37Q2DFnIz6zOr3+KTvqdruKJaIC06I7FlcetQ4tyIPhL2XI2jlPfx5hTAu5EuYnjursdKwmiWZ173LYEW0LzftJ0Ol1JxAAAAAijv4l4F8xn1wjJD1IdtnAS1zVIrYMbSN/l2s1nA2EAUTPhsrvMon9oK7NJ8CmKv9Y5HdDo+Cy7hlhgWeEDMghQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPccnNnG8VU+GItzKE6Z3wwAAAAACAAAAAAAQZgAAAAEAACAAAADhZ8DfuLKOaQeLc2H14L1pVQp/1L3nAiFTigsd49CD0AAAAAAOgAAAAAIAACAAAABrvZMWnJs0f92STnmqFT4fL1K0L9cQ23/3pV+g8h+zXJAAAAAMMuxXu4wkUjWIr+UeMZ+f4Am+m0Jcu5lHs3mtPXPxVIqgBxewLKkOYaK5Cc4+4a88BTM5yGeVESl1XMTJfvkKKrVLLUzzhaZPy1CKzpYGH2dnb7oYdl9zkRvPoAZhlzDN6NkXZB2q0ylxD12pkf3Bv+pRAjfeBxQNHX4oEREyBlUPtCRblB8LLVyRMKcxwPNAAAAArOlEYQPgC6L1t2hPQzIn8BaTcdTWZUpYB34BWfMy+VIkFKq9KFlKoCth2JZO/ssd8cGiaz3hCm/wmUpcF9H4qw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -467,8 +467,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -649,8 +647,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -702,7 +698,7 @@
         <ConnectionProviderMappings />
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
-        <TargetServerVersion>SQLServer2025</TargetServerVersion>
+        <TargetServerVersion>SQLServer2019</TargetServerVersion>
         <AzureMode>false</AzureMode>
         <LinkedAzureTenantId />
         <LinkedAzureAccountId />
